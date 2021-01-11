@@ -42,10 +42,11 @@
         // controls.addEventListener('change', renderer);
 
         // controls = new PointerLockControls( camera, document.body );
-
-
         controls = new THREE.OrbitControls(camera, renderer.domElement);
-  controls.enabled = false;
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+          controls.enabled = false;}
+            
+  controls.enabled = true;
   controls.minDistance = 700;
   controls.maxDistance = 1500;
   controls.autoRotate = true;
