@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=UTF-8 />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,700,700i|Montserrat:700" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="space">
+      <div id="info">
+        <p>romualdas.portfolio()</p>
+      </div>
+    </div>
+    <div class="section1">
+      <p>sveiki</p>
+    
+    </div>
+    <div class="section2">
+      <p>sveiki</p>
+    
+    </div>
+    <!-- <script src="three.js"></script>
+    <script src="OrbitControls.js"></script> -->
+    <!-- <script src="https://threejs.org/examples/js/controls/PointerLockControls.js"></script> -->
+    <script src="https://threejs.org/build/three.min.js"></script>
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+    <script>
+      let scene, camera, renderer, controls, autoRotate, texture;
+      let space = document.querySelector(".space");
+
+      function init() {
+        scene = new THREE.Scene();
+        camera = new THREE.PerspectiveCamera(55,window.innerWidth/window.innerHeight,450,30000);
+        camera.position.set(-3000,-10,-900);
+        
+
+        renderer = new THREE.WebGLRenderer({antialias:true, alpha: true});
+        renderer.setSize(window.innerWidth,window.innerHeight);
+        space.appendChild(renderer.domElement);
+
+        // let controls = new THREE.OrbitControls(camera, renderer.domElement);
+        // controls.addEventListener('change', renderer);
+
+        // controls = new PointerLockControls( camera, document.body );
+
+
+        controls = new THREE.OrbitControls(camera, renderer.domElement);
+  controls.enabled = true;
+  controls.minDistance = 700;
+  controls.maxDistance = 1500;
+  controls.autoRotate = true;
+  controls.autoRotateSpeed = 1.0;
+  controls.enableZoom = false;
+  controls.touches = false;
+
+        
+        let materialArray = [];
+        let texture_ft = new THREE.TextureLoader().load( 'Front_Tex.png');
+        let texture_bk = new THREE.TextureLoader().load( 'Back_Tex.png');
+        let texture_up = new THREE.TextureLoader().load( 'Up_Tex.png');
+        let texture_dn = new THREE.TextureLoader().load( 'Down_Tex.png');
+        let texture_rt = new THREE.TextureLoader().load( 'Right_Tex.png');
+        let texture_lf = new THREE.TextureLoader().load( 'Left_Tex.png');
+        
+          
+        materialArray.push(new THREE.MeshBasicMaterial( { map: texture_ft }));
+        materialArray.push(new THREE.MeshBasicMaterial( { map: texture_bk }));
+        materialArray.push(new THREE.MeshBasicMaterial( { map: texture_up }));
+        materialArray.push(new THREE.MeshBasicMaterial( { map: texture_dn }));
+        materialArray.push(new THREE.MeshBasicMaterial( { map: texture_rt }));
+        materialArray.push(new THREE.MeshBasicMaterial( { map: texture_lf }));
+   
+        for (let i = 0; i < 6; i++)
+           materialArray[i].side = THREE.BackSide;
+        let skyboxGeo = new THREE.BoxGeometry( 5000, 5000, 5000);
+        let skybox = new THREE.Mesh( skyboxGeo, materialArray );
+        scene.add( skybox ); 
+        
+        window.addEventListener('resize', onWindowResize, false);
+        animate();
+      }
+
+      function onWindowResize() {
+  camera.aspect = window.innerWidth / window.innerHeight;
+
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+}
+      function animate() {
+        
+        // controls.autoRotate = autoRotate;
+        
+        controls.update();
+        renderer.render(scene,camera);
+        requestAnimationFrame(animate);
+        
+        
+      }
+      init();
+    </script>
+     
+  </body>
+</html>
