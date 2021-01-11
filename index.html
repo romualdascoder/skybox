@@ -43,11 +43,25 @@
 
         // controls = new PointerLockControls( camera, document.body );
         controls = new THREE.OrbitControls(camera, renderer.domElement);
-        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-          controls.enabled = false;
-        }else{
+
+
+        // if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        // controls.enabled = false;
+        // }else{
+        //   controls.enabled = true;
+        // }
+        function is_touch_enabled() { 
+    return ( 'ontouchstart' in window ) ||  
+           ( navigator.maxTouchPoints > 0 ) ||  
+           ( navigator.msMaxTouchPoints > 0 ); 
+} 
+if( is_touch_enabled() ) { 
+  controls.enabled = false;  
+        } 
+        else { 
           controls.enabled = true;
         }
+
 
        
   controls.minDistance = 700;
