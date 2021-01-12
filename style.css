@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  padding: 0;
+  border: 0;
   font-family: 'Roboto Mono', monospace;
   font-weight: bold;
   /* overflow: hidden; */
@@ -7,8 +9,10 @@ body {
 
 
 .space{
-  height: 100vh;
+  /* height: 100vh; */
+  height:  100%;
   width: 100%;
+  background-color: black;
   /* background: rgba(255, 0, 0, 0.5); */
   /* background: yellow; */
   /* opacity: 0.99; */
@@ -16,8 +20,8 @@ body {
 }
 
 .section1{
-  height: 70vh;
-  background-color: red;
+  min-height: 100vh;
+  background-color: black;
 }
 .section2{
   height: 100vh;
