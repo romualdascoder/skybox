@@ -12,11 +12,11 @@
       </div>
     </div>
     <div class="section1">
-      <p>sveiki</p>
+     
     
     </div>
     <div class="section2">
-      <p>sveiki</p>
+     
     
     </div>
     <!-- <script src="three.js"></script>
@@ -50,12 +50,12 @@
         // }else{
         //   controls.enabled = true;
         // }
-        function is_touch_enabled() { 
+        function isTouchEnabled() { 
     return ( 'ontouchstart' in window ) ||  
            ( navigator.maxTouchPoints > 0 ) ||  
            ( navigator.msMaxTouchPoints > 0 ); 
 } 
-if( is_touch_enabled() ) { 
+if( isTouchEnabled() ) { 
   controls.enabled = false;  
         } 
         else { 
@@ -73,12 +73,12 @@ if( is_touch_enabled() ) {
 
         
         let materialArray = [];
-        let texture_ft = new THREE.TextureLoader().load( 'Front_Tex.png');
-        let texture_bk = new THREE.TextureLoader().load( 'Back_Tex.png');
-        let texture_up = new THREE.TextureLoader().load( 'Up_Tex.png');
-        let texture_dn = new THREE.TextureLoader().load( 'Down_Tex.png');
-        let texture_rt = new THREE.TextureLoader().load( 'Right_Tex.png');
-        let texture_lf = new THREE.TextureLoader().load( 'Left_Tex.png');
+        let texture_ft = new THREE.TextureLoader().load( 'Front_Tex.jpg');
+        let texture_bk = new THREE.TextureLoader().load( 'Back_Tex.jpg');
+        let texture_up = new THREE.TextureLoader().load( 'Up_Tex.jpg');
+        let texture_dn = new THREE.TextureLoader().load( 'Down_Tex.jpg');
+        let texture_rt = new THREE.TextureLoader().load( 'Right_Tex.jpg');
+        let texture_lf = new THREE.TextureLoader().load( 'Left_Tex.jpg');
         
           
         materialArray.push(new THREE.MeshBasicMaterial( { map: texture_ft }));
