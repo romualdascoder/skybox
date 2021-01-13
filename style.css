@@ -186,8 +186,13 @@ li {
   /* show the menu */
   /* transform: translateY(0); */
 }
-
-
+#info h1{
+  font-size: 3rem;
+}
+.animate{
+  /* color: rgba(0, 0, 0, 1); */
+  color: rgb(53, 111, 81);
+}
 
 
 
