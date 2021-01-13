@@ -22,7 +22,7 @@ body {
 }
 
 .loader > img {
-  width: 100px;
+  max-width: 200px;
 }
 
 .loader.hidden {
