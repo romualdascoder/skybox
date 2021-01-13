@@ -27,7 +27,7 @@ body {
 
 .loader.hidden {
   /* background-color: black; */
-  animation: fadeOut 0.7s;
+  animation: fadeOut 0.5s;
   transition-timing-function: ease;
   animation-fill-mode: forwards;
 }
