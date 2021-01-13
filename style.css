@@ -28,7 +28,9 @@ body {
   transform: translate(-50%, -50%);
   z-index: 100;
   color: white;
-  font-size: 2rem;
+  min-width: 50px;
+  border: 1px solid red;
+  /* font-size: 2rem; */
   /* border: 1px solid red; */
 }
 
