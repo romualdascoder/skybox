@@ -2,29 +2,140 @@
 <html>
   <head>
     <meta charset=UTF-8 />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,700,700i|Montserrat:700" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,700,700i|Montserrat:700" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
+    <div class="continer">
+
+      
     <div class="space">
+     
+      <div class="menu-btn">
+        <button type="button"><i class="material-icons md-48">fingerprint</i></button>
+  </div>
+ 
+      <div class="wrapper">
+        
+
+        <div class="menu ">
+              <div class="row ">
+                    <div class="col-lg overlay ">
+                          <h1>2021</h1>
+
+                          <div>
+                                <ul>
+                                      <!-- <li><div class="logo"></div></li> -->
+                                      <li class="shuffle" data-changetext="EMOH"><a class="menuLink" href="#section1">Pradžia</a></li>
+                                      <li class="shuffle" data-changetext="YROTS RUO"><a class="menuLink" href="#section2">Pradžia</a></li>
+                                      <li class="shuffle" data-changetext="OILOFTROP"><a class="menuLink" href="#">Pradžia</a></li>
+                                      <li class="shuffle" data-changetext="TCATNOC"><a class="menuLink" href="#">Pradžia</a></li>
+                                </ul>
+                          </div>
+                    </div>
+              </div>
+        </div>
+  </div> 
+
+  
+
       <div id="info">
         <p>romualdas.portfolio()</p>
       </div>
     </div>
-    <div class="section1">
-     
+  </div> 
+
+    <div id="section1"></div>
+    <div id="section2"></div>
     
-    </div>
-    <div class="section2">
-     
-    
-    </div>
     <!-- <script src="three.js"></script>
     <script src="OrbitControls.js"></script> -->
     <!-- <script src="https://threejs.org/examples/js/controls/PointerLockControls.js"></script> -->
+   
     <script src="https://threejs.org/build/three.min.js"></script>
     <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script>
+
+
+
+
+
+
+// @@@@@@@@@@@@@@@@@@@@@
+
+
+const t1 = new TimelineMax({paused: true});
+
+            t1.to(".overlay", 1, {
+                  opacity: 1,
+                  ease: Expo.easeInOut
+            });
+
+            t1.staggerFrom(".menu ul li", 0.8, {y: 60, opacity: 0, ease: Expo.easeOut}, 0.1);
+
+            t1.reverse();
+           
+
+           document.querySelector(".menu-btn").addEventListener("click", toggleHamburger);
+
+      // function menuBtn() {
+      // t1.reversed(!t1.reversed());
+      // }
+
+      let ham = document.querySelector('.menu-btn');
+      // let wrapper = document.querySelector('.wrapper');
+      // let menu = document.querySelector('.menu');
+      let navbar = document.querySelector('.row');
+      
+
+     
+
+
+//       menubtn.addEventListener('click', () => {
+//         row.classList.toggle('display-block');
+//         // event.preventDefault();
+// });
+function toggleHamburger(){
+  navbar.classList.toggle("showNav")
+  t1.reversed(!t1.reversed());
+  // ham.classList.toggle("showClose")
+}
+
+ham.addEventListener("click", toggleHamburger)
+
+var menuLinks = document.querySelectorAll(".menuLink")
+
+menuLinks.forEach( 
+  function(menuLink) { 
+    menuLink.addEventListener("click", toggleHamburger) 
+  }
+)
+// wrapper.addEventListener('click', () => {
+//         wrapper.classList.toggle('display-block');
+//         // event.preventDefault();
+// });
+  
+// wrapper.addEventListener('click', (event) => {
+//   wrapper.classList.toggle('display-none');
+//   event.preventDefault();
+// });
+// menubtn.addEventListener('click', () => {
+// document.querySelector('.menu').style.display='block'
+// });
+
+// window.addEventListener('mouseup', function(event){
+//     var menu = document.querySelector('.menu');
+//     if (event.target != menu && event.target.parentNode != menu){
+//       menu.style.display = 'none';
+//     }
+// });
+
+
+      // 3d wr header
       let scene, camera, renderer, controls, autoRotate, texture;
       let space = document.querySelector(".space");
 
@@ -115,6 +226,8 @@ if( isTouchEnabled() ) {
         
       }
       init();
+
+      
     </script>
      
   </body>

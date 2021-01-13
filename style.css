@@ -10,24 +10,25 @@ body {
 
 .space{
   /* height: 100vh; */
-  height:  100%;
+
+  z-index: 1000000;
+  min-height:  100vh;
   width: 100%;
-  background-color: black;
+  /* background-color: black; */
   /* background: rgba(255, 0, 0, 0.5); */
   /* background: yellow; */
   /* opacity: 0.99; */
   /* background-color: transparent; */
+  background-color: yellow;
 }
 
-.section1{
-  min-height: 100vh;
-  background-color: black;
-}
-.section2{
-  height: 100vh;
-  background-color: green;
-}
 
+
+
+
+
+
+/* info......... */
 #info{
   
   position: absolute;
@@ -44,4 +45,187 @@ body {
   font-size: 2rem;
   /* border: 1px solid red; */
 }
+
+
+#section1{
+  min-height: 100vh;
+  background-color: grey;
+}
+#section2{
+  height: 100vh;
+  background-color: green;
+}
+
+
+/* @@@@@@@@@@@@@@@@*/
+
+/* pirmas menu */
+
+
+
+ .menu-btn {
+   position: fixed;
+   margin: 1.2em;
+  
+   right: 0%;
+  
+   z-index: 10000;
+}
+
+button {
+   border: none;
+   background: none;
+}
+
+button:focus {
+   outline: none !important;
+}
+
+i {
+   outline: none;
+   padding: 1rem;
+   color: #fff;
+  
+}
+
+.material-icons.md-48 {
+  font-size: 55px; 
+}
+
+.material-icons:hover { 
+  color: black;
+}
+
+.row, .col-lg {
+   margin: 0 !important;
+   padding: 0 !important;
+}
+
+.col-lg {
+  z-index: 1000;
+   height: 100vh;
+}
+
+.col-lg.overlay {
+   background: #3d303d;
+   position: fixed;
+   opacity: 0;
+}
+
+.overlay h1 {
+  position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 280px;
+   font-family: Poppins;
+   font-weight: 800;
+   color: #161116;
+}
+
+ul {
+  position: fixed;
+   top: 42%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.logo {
+   background: url(logo.gif);
+   width: 140px;
+   height: 40px;
+}
+
+li {
+   padding-top: 40px;
+   font-family: Poppins;
+   font-size: 24px;
+   font-weight: 300;
+   text-transform: uppercase;
+   text-align: center;
+   color: #a9a6a9;
+}
+
+@media(max-width: 900px) {
+   ul {
+         top: 46%;
+   }
+
+   li {
+         padding-top: 40px;
+   }
+
+   .overlay h1 {
+         font-size: 140px;
+   }
+} 
+
+
+ /* .row{ 
+  
+  position: fixed;
+  
+  padding-top:10000px;
+  transform: translateY(-100%);
+  height: 100vh;
+  width: 100%; 
+} 
+
+
+.display-block{
+  padding-top:0px; 
+  transform: translateY(0%);
+  display: none;
+  display: block;
+} */
+
+.row{
+/* padding-right: 10000000px; */
+  /* transform: translateY(-100%); */
+  /* display: none; */
+  /* position: fixed; */
+  visibility: hidden;
+}
+
+
+.showNav {
+  /* padding-right: 0px; */
+  visibility:visible;
+  /* position: fixed; */
+  /* display: block; */
+  /* show the menu */
+  /* transform: translateY(0); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
