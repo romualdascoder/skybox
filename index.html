@@ -9,9 +9,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
-    <div class="continer">
 
-      
+    <div class="loader">
+      <img src="https://media.giphy.com/media/3y0oCOkdKKRi0/giphy.gif" alt="Loading..." />
+  </div>
+
+    <div class="continer">
     <div id="space">
      
       <div class="menu-btn">
@@ -64,7 +67,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
     <script>
-
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; 
+});
 
 
 
