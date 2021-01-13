@@ -12,7 +12,7 @@
     <div class="continer">
 
       
-    <div class="space">
+    <div id="space">
      
       <div class="menu-btn">
         <button type="button"><i class="material-icons md-48">fingerprint</i></button>
@@ -21,18 +21,18 @@
       <div class="wrapper">
         
 
-        <div class="menu ">
-              <div class="row ">
+        <div class="menu">
+              <div class="row">
                     <div class="col-lg overlay ">
                           <h1>2021</h1>
 
                           <div>
                                 <ul>
                                       <!-- <li><div class="logo"></div></li> -->
-                                      <li class="shuffle" data-changetext="EMOH"><a class="menuLink" href="#section1">Pradžia</a></li>
-                                      <li class="shuffle" data-changetext="YROTS RUO"><a class="menuLink" href="#section2">Pradžia</a></li>
-                                      <li class="shuffle" data-changetext="OILOFTROP"><a class="menuLink" href="#">Pradžia</a></li>
-                                      <li class="shuffle" data-changetext="TCATNOC"><a class="menuLink" href="#">Pradžia</a></li>
+                                      <li class="shuffle" data-changetext="EMOH"><a class="menuLink" href="#space">Pradžia</a></li>
+                                      <li class="shuffle" data-changetext="YROTS RUO"><a class="menuLink" href="#section1">Apie</a></li>
+                                      <li class="shuffle" data-changetext="OILOFTROP"><a class="menuLink" href="#section2">Pradžia</a></li>
+                                      <li class="shuffle" data-changetext="TCATNOC"><a class="menuLink" href="#">Kontaktai</a></li>
                                 </ul>
                           </div>
                     </div>
@@ -137,7 +137,7 @@ menuLinks.forEach(
 
       // 3d wr header
       let scene, camera, renderer, controls, autoRotate, texture;
-      let space = document.querySelector(".space");
+      let space = document.querySelector("#space");
 
       function init() {
         scene = new THREE.Scene();

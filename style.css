@@ -8,27 +8,13 @@ body {
 }
 
 
-.space{
-  /* height: 100vh; */
-
+#space{
   z-index: 1000000;
   min-height:  100vh;
   width: 100%;
-  /* background-color: black; */
-  /* background: rgba(255, 0, 0, 0.5); */
-  /* background: yellow; */
-  /* opacity: 0.99; */
-  /* background-color: transparent; */
-  background-color: yellow;
+  background-color: black;
 }
 
-
-
-
-
-
-
-/* info......... */
 #info{
   
   position: absolute;
@@ -140,9 +126,10 @@ ul {
 }
 
 li {
-   padding-top: 40px;
+  /* top: 50%; */
+   padding-top: 4rem;
    font-family: Poppins;
-   font-size: 24px;
+   font-size: 3rem;
    font-weight: 300;
    text-transform: uppercase;
    text-align: center;
