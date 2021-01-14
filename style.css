@@ -122,7 +122,7 @@ ul li a{
   
   -webkit-text-stroke: 0.8px rgb(111, 111, 111);
 
-  border-color: none;
+  
 }
 
 
@@ -130,12 +130,10 @@ ul li a{
 .gradient-text{
   font-family: Arial, Helvetica, sans-serif;
   display: block;
- border: 0px solid black;
-  background: linear-gradient(to right, crimson,rgb(24, 95, 157),springgreen);
-  background-size: 200% 200%;
-  animation: rainbow 2s ease-in-out infinite;
-  background-clip: text;
-  -webkit-background-clip: text;
+ 
+  
+ 
+  
   color:rgba(0,0,0,1);
   font-size: 4.5rem;
   /* width:50vw; */
@@ -144,24 +142,32 @@ ul li a{
   /* margin:30vh auto; */
   /* display:block; */
   /* text-align:center; */
-  transition: color .2s ease-in-out;
   text-transform:uppercase;
   font-weight:900;
-  border-color: none;
+  /* transition: color .2s ease-in-out; */
+  
+
+ 
 }
 .gradient-text:hover{
   color:rgba(0,0,0,0);
   -webkit-text-stroke: 0px;
   text-decoration: none; 
-  /* transform: rotate(5deg); */
-  border-color: none;
+  transform: rotate(5deg);
+  background-clip: text;
+  background: linear-gradient(to right, crimson,rgb(24, 95, 157),springgreen);
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  -webkit-background-clip: text;
 }
 
-/* .rotate:hover{
+.rotate:hover{
   transform: rotate(-5deg);
-  border: 0px;
-  border-color: none;
-} */
+  
+  
+
+ 
+}
 
 @keyframes rainbow { 
   0%{background-position:left}
@@ -175,11 +181,12 @@ ul li a{
 } */
 
 .material-icons.md-48 {
-  font-size: 55px; 
+  font-size: 3rem; 
 }
 
 .material-icons:hover { 
   color: rgb(53, 111, 81);
+  
 }
 
 .row, .col-lg {
@@ -235,6 +242,7 @@ li {
    text-transform: uppercase;
    text-align: center;
    color: #a9a6a9;
+   
 }
 
 @media(max-width: 900px) {
@@ -249,6 +257,21 @@ li {
    .overlay h1 {
          font-size: 140px;
    }
+   .gradient-text{
+    
+  
+   color:white;
+   }
+   .gradient-text:hover{
+    transform: rotate(0deg);
+   }
+   .rotate:hover{
+    transform: rotate(0deg);
+    
+    /* color:crimson,rgb(24, 95, 157),springgreen; */
+  
+   
+  }
 } 
 
  /* .row{ 
