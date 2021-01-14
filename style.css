@@ -245,7 +245,7 @@ li {
    
 }
 
-@media(max-width: 900px) {
+@media only screen and (max-width: 770px) {
    ul {
          top: 46%;
    }
@@ -269,8 +269,9 @@ li {
     transform: rotate(0deg);
     
     /* color:crimson,rgb(24, 95, 157),springgreen; */
-  
-   
+  }
+  .material-icons.md-48 {
+    font-size: 4.5rem; 
   }
 } 
 
