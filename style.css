@@ -285,7 +285,7 @@ li {
     padding: 30px;
   font-size: 80px;
    /* color:white; */
-   -webkit-text-stroke: 0px;
+   /* -webkit-text-stroke: 0px; */
    }
    /* .gradient-text:hover{
     transform: rotate(0deg);
