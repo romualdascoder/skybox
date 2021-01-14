@@ -122,7 +122,7 @@ ul li a{
   
   -webkit-text-stroke: 0.8px rgb(111, 111, 111);
 
- 
+  border-color: none;
 }
 
 
@@ -130,6 +130,7 @@ ul li a{
 .gradient-text{
   font-family: Arial, Helvetica, sans-serif;
   display: block;
+ border: 0px solid black;
   background: linear-gradient(to right, crimson,rgb(24, 95, 157),springgreen);
   background-size: 200% 200%;
   animation: rainbow 2s ease-in-out infinite;
@@ -137,24 +138,30 @@ ul li a{
   -webkit-background-clip: text;
   color:rgba(0,0,0,1);
   font-size: 4.5rem;
-  /* width:80vw; */
+  /* width:50vw; */
+  /* z-index: 99999999; */
+  /* border:1px solid red; */
   /* margin:30vh auto; */
   /* display:block; */
   /* text-align:center; */
   transition: color .2s ease-in-out;
   text-transform:uppercase;
   font-weight:900;
+  border-color: none;
 }
 .gradient-text:hover{
   color:rgba(0,0,0,0);
   -webkit-text-stroke: 0px;
   text-decoration: none; 
-  transform: rotate(5deg);
+  /* transform: rotate(5deg); */
+  border-color: none;
 }
 
-.rotate:hover{
+/* .rotate:hover{
   transform: rotate(-5deg);
-}
+  border: 0px;
+  border-color: none;
+} */
 
 @keyframes rainbow { 
   0%{background-position:left}
