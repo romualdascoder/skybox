@@ -493,11 +493,13 @@ li {
    
      .navigation-link {
        /* font-size: 70px; */
-       width: 700px;
+       width: 280px;
        /* border: 1px solid red; */
      }
 
-   
+     .navigation-link span:nth-child(1){
+      width: 700px;
+    }
 
 } 
 
