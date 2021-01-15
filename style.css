@@ -473,10 +473,10 @@ li {
    .project-preview {
     
      top: 35%;
-     left: 20%;
+     left: 40%;
       
-     max-width: 330px;
-     max-height: 210px;
+     max-width: 550px;
+     max-height: 330px;
      
    }
    
@@ -491,8 +491,8 @@ li {
    }
    
      .navigation-link {
-       font-size: 40px;
-       width: 350px;
+       font-size: 70px;
+       width: 500px;
      }
 
    
