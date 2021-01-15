@@ -8,6 +8,11 @@ body {
   /* overflow: hidden; */
 }
 
+.visaskonteineris{
+  display: flex;
+  flex-direction: column;
+}
+
 /* @@@@@@@@@@@@@@@@@@@@ loader*/
 .loader {
   position: fixed;
@@ -278,34 +283,7 @@ li {
    
 }
 
-@media only screen and (max-width: 980px) {
-   
 
-   .overlay h1 {
-         /* font-size: 0px; */
-         /* visibility: hidden; */
-   }
-   .gradient-text{
-    padding: 30px;
-  font-size: 80px;
-   color:white;
-   -webkit-text-stroke: 0px;
-  
-   }
-   /* .gradient-text:hover{
-    transform: rotate(0deg);
-   }
-   .rotate:hover{
-    transform: rotate(0deg);
-    
-   
-  } */
-  .material-icons.md-48 {
-    
-    /* padding: 0px; */
-  }
-
-} 
 
  /* .row{ 
   position: fixed;
@@ -348,12 +326,12 @@ li {
 
 
 
-#section1{
+/* #section1{
   min-height: 100vh;
   background-color: black;
   font-family: 'Roboto Mono', monospace;
   color: white;
-}
+} */
 
 
 
@@ -363,11 +341,160 @@ li {
 }
 
 
+/* @@@@@@@@@@@@@@@@@@ */
 
 
 
 
 
+.nav-wrap{
+  min-height: 100vh;
+  background-color: black;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+
+}
+.nav-list {
+  padding-top: 340px;
+  padding-left: 150px;
+  padding-bottom: 340px;
+  /* position: absolute; */
+ /* border: 1px solid red; */
+}
+
+.navigation-item {
+  display: block;
+  user-select: none;
+  /*margin: 120px 0;*/
+}
+
+.navigation-link {
+  font-family: "Cosi Azure";
+  font-size: 100px;
+  padding-top: 200px;
+  /* text-decoration: none; */
+  color: rgba(255, 255, 255, 0.3);
+  /* border: 1px solid red; */
+  width: 650px;
+ 
+}
+
+.navigation-link span {
+  position: relative;
+  display: block;
+  
+ 
+}
+
+.navigation-link span:nth-child(1){
+  color: #ffffff;
+}
+
+.navigation-item span:before {
+
+  width: 0;
+  color: #ffffff;
+  overflow: hidden;
+  position: absolute;
+  content: attr(data-text);
+  transition: all 1s cubic-bezier(0.84, 0, 0.08, 0.99);
+}
+
+.navigation-item span:hover:before {
+  position: absolute;
+   z-index: 99999999 !important;
+  width: 100%;
+}
+
+.project-preview-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.project-preview {
+  z-index: 99999999 !important;
+  position: fixed;
+  /* position: absolute; */
+  top: 35%;
+  left: 50%;
+  width: 0px;
+  height: 350px;
+/*  max-width: 400px;
+  max-height: 400px;*/
+  background: url(img-1.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+  
+}
+
+
+
+
+
+
+@media only screen and (max-width: 980px) {
+   
+
+  .overlay h1 {
+        /* font-size: 0px; */
+        /* visibility: hidden; */
+  }
+  .gradient-text{
+   padding: 30px;
+ font-size: 80px;
+  color:white;
+  -webkit-text-stroke: 0px;
+ 
+  }
+  /* .gradient-text:hover{
+   transform: rotate(0deg);
+  }
+  .rotate:hover{
+   transform: rotate(0deg);
+   
+  
+ } */
+ .material-icons.md-48 {
+   
+   /* padding: 0px; */
+ }
+
+ /* portfolio */
+ 
+ .nav-list{
+   padding-left: 10px;
+   margin: 0;
+   }
+   
+   .project-preview {
+    
+     top: 5%;
+     left: 20%;
+      
+     max-width: 330px;
+     max-height: 210px;
+     
+   }
+   
+   .navigation-item {
+    
+     margin-top: 120px;
+   }
+   
+   .navigation-item span:hover:before {
+    /* opacity: 0; */
+    
+   }
+   
+     .navigation-link {
+       font-size: 24px;
+     }
+
+} 
 
 
 

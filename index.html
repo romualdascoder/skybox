@@ -3,7 +3,7 @@
   <head>
     <meta charset=UTF-8 />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com">  -->
 <!-- <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> -->
 <!-- <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet"> -->
@@ -19,7 +19,7 @@
       <!-- <img src="https://media.giphy.com/media/3y0oCOkdKKRi0/giphy.gif" alt="Loading..." /> -->
       <img src="windows.gif" alt="Loading..." />
   </div>
-
+<div class="visaskonteineris">
     <div class="header-container">
     <div id="space">
      <p class="header-title">3D</p>
@@ -59,15 +59,62 @@
     </div>
   </div> 
 
-    <div id="section1">
-      <p>
-        Hover to see a <span class="hiddentxt"><a href="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg">banana</a></span><span class="hiddenimg"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg" width="250" /></span>.
-      </p>
-    </div>
+    <!-- <div id="section1"> -->
+      <div class="nav-wrap">
+        <div class="project-preview-wrapper">
+          <div class="project-preview"></div>
+        </div>
+        <div class="nav-list">
+          <div class="navigation-item">
+            <div class="navigation-link navigation-link-1">
+              <span>Rubina svetainė</span>
+              <span data-text="HTML">HTML</span>
+              <span data-text="CSS">CSS</span>
+              <span data-text="JS">JS</span>
+            </div>
+          </div>
+          <div class="project-overlay"></div>
+          <div class="navigation-item">
+            <div class="navigation-link navigation-link-2">
+              <span>Snowboards parduotuvė</span>
+              <span data-text="HTML">HTML</span>
+              <span data-text="CSS">CSS</span>
+              <span data-text="JS">JS</span>
+            </div>
+          </div>
+          <div class="navigation-item">
+            <div class="navigation-link navigation-link-3" >
+              <span>Codecore</span>
+              <span data-text="HTML">HTML</span>
+              <span data-text="CSS">CSS</span>
+              <span data-text="JS">JS</span>
+            </div>
+          </div>
+          <div class="navigation-item">
+            <div class="navigation-link navigation-link-4" >
+              <span>Pixel perfext</span>
+              <span data-text="HTML">HTML</span>
+              <span data-text="CSS">CSS</span>
+              <span data-text="JS">JS</span>
+            </div>
+          </div>
+          <div class="navigation-item">
+            <div class="navigation-link navigation-link-5" >
+              <span data-text="Asterisks">Asterisks</span>
+            </div>
+          </div>
+          <div class="navigation-item">
+            <div class="navigation-link navigation-link-6" >
+              <span data-text="Charger">Charger</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
     <div id="section2">
       fhj
     </div>
-    
+  </div>
     <script src="three.js"></script>
     <script src="OrbitControls.js"></script>
     
@@ -75,7 +122,8 @@
    
     <script src="typed.js"></script>
     <!-- <script src="https://threejs.org/examples/js/controls/PointerLockControls.js"></script> -->
+   
     <script src="script.js"></script>
-     
+    <script src="gallery.js"></script>
   </body>
 </html>
