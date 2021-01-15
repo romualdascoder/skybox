@@ -472,7 +472,7 @@ li {
    
    .project-preview {
     
-     top: 5%;
+     top: 35%;
      left: 20%;
       
      max-width: 330px;
@@ -491,8 +491,11 @@ li {
    }
    
      .navigation-link {
-       font-size: 24px;
+       font-size: 40px;
+       width: 350px;
      }
+
+   
 
 } 
 
