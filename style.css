@@ -431,7 +431,11 @@ li {
   
 }
 
-
+.closeBtn{
+  right: 2%;
+  top:80%;
+  position: absolute;
+}
 
 
 
