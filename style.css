@@ -55,7 +55,11 @@ color: white;
 font-family: 'Roboto Mono', monospace;
 }
 /* @@@@@@@@@@@@@@@@@@@@@ */
-
+.header-container{
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
 #space{
   z-index: 1000000;
   max-height:  100vh;
@@ -132,7 +136,7 @@ ul li a{
   /* font-family: Arial, Helvetica, sans-serif; */
   display: block;
   font-family: 'Roboto Mono', monospace;
-  
+  /* font-family: "Cosi Azure"; */
  
   
   color:rgba(0,0,0,1);
@@ -274,7 +278,7 @@ li {
    
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 980px) {
    
 
    .overlay h1 {
@@ -286,6 +290,7 @@ li {
   font-size: 80px;
    color:white;
    -webkit-text-stroke: 0px;
+  
    }
    /* .gradient-text:hover{
     transform: rotate(0deg);
@@ -356,6 +361,7 @@ li {
   height: 100vh;
   background-color: green;
 }
+
 
 
 
