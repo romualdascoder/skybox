@@ -11,6 +11,7 @@ body {
 .visaskonteineris{
   display: flex;
   flex-direction: column;
+ 
 }
 
 /* @@@@@@@@@@@@@@@@@@@@ loader*/
@@ -348,7 +349,12 @@ li {
 
 
 .nav-wrap{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 100%;
   min-height: 100vh;
+  overflow: hidden;
   background-color: black;
   font-family: 'Roboto Mono', monospace;
   color: white;
@@ -426,6 +432,7 @@ li {
 /*  max-width: 400px;
   max-height: 400px;*/
   background: url(img-1.jpg) no-repeat 50% 50%;
+  
   background-size: cover;
   overflow: hidden;
   
@@ -439,10 +446,24 @@ li {
 }
 .material-icons.md-36 { font-size: 36px; }
 
+.touch-btn{
+  left:50%;
+  top:91%;
+  color: white;
+  position: absolute;
+  color:rgba(255, 255, 255, 0.1);
+ 
+}
 
+@media only screen and (max-width: 1200px) {
+  
+}
 
 @media only screen and (max-width: 980px) {
    
+  .touch-btn{
+  visibility: hidden;
+  }
 
   .overlay h1 {
         /* font-size: 0px; */
