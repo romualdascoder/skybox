@@ -438,7 +438,7 @@ li {
   position: absolute;
 }
 .material-icons.md-36 { font-size: 36px; }
-/* .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); } */
+
 
 
 @media only screen and (max-width: 980px) {
@@ -478,7 +478,7 @@ li {
    .project-preview {
     
      top: 35%;
-     left: 40%;
+     left: 38%;
       
      max-width: 600px !important;
      /* max-height: 600px; */
