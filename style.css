@@ -91,6 +91,12 @@ font-family: 'Roboto Mono', monospace;
   /* font-weight: 400; */
   /* font-size: 2rem; */
   /* border: 1px solid red; */
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+   -khtml-user-select: none; 
+     -moz-user-select: none; 
+      -ms-user-select: none; 
+          user-select: none; 
 }
 
 #info h1{
@@ -102,6 +108,7 @@ font-family: 'Roboto Mono', monospace;
 .animate{
   /* color: rgba(0, 0, 0, 1); */
   color: rgb(53, 111, 81);
+  
 }
 
 
@@ -367,19 +374,37 @@ li {
   font-family: 'Roboto Mono', monospace;
   color: white;
 
+
+  
+  
 }
 .nav-list {
   padding-top: 340px;
   padding-left: 150px;
   padding-bottom: 340px;
   /* position: absolute; */
+
+
+  /* istrinti jri neveiks prisilietimas  */
  /* border: 1px solid red; */
+ max-width: 650px;
+ /* istrinti jri neveiks prisilietimas  */
+
+ transition: transform .10s;
+ will-change: transform;
 }
 
 .navigation-item {
   display: block;
-  user-select: none;
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+   -khtml-user-select: none; 
+     -moz-user-select: none; 
+      -ms-user-select: none; 
+          user-select: none; 
+                               
   /*margin: 120px 0;*/
+  
 }
 
 .navigation-link {
@@ -459,8 +484,17 @@ li {
   color: white;
   position: absolute;
   color:rgba(255, 255, 255, 0.1);
- 
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+   -khtml-user-select: none; 
+     -moz-user-select: none; 
+      -ms-user-select: none; 
+          user-select: none; 
 }
+/* @@@@@@@@@@@@distort content on scrool */
+
+
+
 
 
 
@@ -505,6 +539,7 @@ li {
  .nav-list{
    padding-left: 10px;
    margin: 0;
+   
    }
    
    .project-preview {
