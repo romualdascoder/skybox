@@ -22,6 +22,23 @@ var typed = new Typed('.animate', {
     loop: true
     
   });
+
+
+
+  options = {
+    "cursorOuter": "circle-basic",
+    "hoverEffect": "circle-move",
+    "hoverItemMove": false,
+    "defaultCursor": false,
+    "outerWidth": 60,
+    "outerHeight": 60
+  }; 
+  magicMouse(options);
+ 
+ 
+  
+  
+
 // var typed = new Typed('#typed', {
 //   strings: ['romualdas .web(); .portfolio();'],
 //   smartBackspace: true,
@@ -191,4 +208,15 @@ if( isTouchEnabled() ) {
       init();
 
       
+
+
+    
+
+
+    
+        
+
    
+
+    
+      

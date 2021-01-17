@@ -8,6 +8,7 @@
 
     
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="magic-mouse.css" />
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com">  -->
 <!-- <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> -->
@@ -43,9 +44,9 @@
                           <div>
                                 <ul>
                                       <!-- <li><div class="logo"></div></li> -->
-                                      <li><a class="menuLink gradient-text " href="#space">Pradžia</a></li>
-                                      <li><a class="menuLink gradient-text rotate" href="#section1">Apie</a></li>
-                                      <li><a class="menuLink gradient-text " href="#section2">Pradžia</a></li>
+                                      <li><a class="menuLink gradient-text " href="#about">Apie</a></li>
+                                      <li><a class="menuLink gradient-text rotate" href="#projects">Projektai</a></li>
+                                      <li><a class="menuLink gradient-text " href="#section2">CV</a></li>
                                       <li><a class="menuLink gradient-text rotate" href="#">Kontaktai</a></li>
                                 </ul>
                           </div>
@@ -62,10 +63,20 @@
 
 
     </div>
-  </div> 
-  <section>
+  </div>
+  <section id="about">
+   <div class="about-container">
+     <p class="about-info">Informacinės technologijos yra mano gyvenimo būdas bei didžiausias pomėgis. Domiuosi įvairiomis IT naujovėmis, kasdien stengiuosi įgyti kuo daugiau patirties. Su kiekvienu projektu stengiuosi įgauti kuo daugiau patirties.</p>
+<div>
+     <p class="about-typed">apie={<span class="about-animate"></span></p>
+      </div>
+    </div>
+  </section> 
+  <section id="projects">
     <!-- <div id="section1"> -->
+      
       <div class="nav-wrap">
+        <p class="projects-title">Projektai</p>
         <div class="project-preview-wrapper">
           <div class="project-preview">
             <i class="closeBtn material-icons md-36 md-dark">close</i>
@@ -79,7 +90,7 @@
               <span data-text="HTML">HTML</span>
               <span data-text="CSS">CSS</span>
               <span data-text="JS">JS</span>
-              <span data-text="Plačiau">Plačiau</span>
+              <span class="magic-hover magic-hover__square" data-text="Plačiau">Plačiau</span>
             </div>
           </div>
           <div class="project-overlay"></div>
@@ -89,7 +100,7 @@
               <span data-text="HTML">HTML</span>
               <span data-text="CSS">CSS</span>
               <span data-text="JS">JS</span>
-              <span data-text="Plačiau">Plačiau</span>
+              <span class="magic-hover magic-hover__square" data-text="Plačiau">Plačiau</span>
             </div>
           </div>
           <div class="navigation-item">
@@ -98,7 +109,7 @@
               <span data-text="HTML">HTML</span>
               <span data-text="CSS">CSS</span>
               <span data-text="JS">JS</span>
-              <span data-text="Plačiau">Plačiau</span>
+              <span class="magic-hover magic-hover__square" data-text="Plačiau">Plačiau</span>
             </div>
           </div>
           <div class="navigation-item">
@@ -107,7 +118,7 @@
               <span data-text="HTML">HTML</span>
               <span data-text="CSS">CSS</span>
               <span data-text="JS">JS</span>
-              <span data-text="Plačiau">Plačiau</span>
+              <span class="magic-hover magic-hover__square" data-text="Plačiau">Plačiau</span>
             </div>
           </div>
           <div class="navigation-item">
@@ -128,6 +139,7 @@
       fhj
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <script src="three.js"></script>
     <script src="OrbitControls.js"></script>
     
@@ -135,9 +147,10 @@
    
     <script src="typed.js"></script>
     <!-- <script src="https://threejs.org/examples/js/controls/PointerLockControls.js"></script> -->
-   
+    <script src="mouse.js"></script>
     <script src="script.js"></script>
     <script src="gallery.js"></script>
     <script src="scroll.js"></script>
+    
   </body>
 </html>

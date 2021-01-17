@@ -139,6 +139,7 @@ font-family: 'Roboto Mono', monospace;
 
 .menu-btn .material-icons { 
   font-size: 50px; 
+  color: rgba(255, 255, 255, 0.8);
 }
 
 i {
@@ -162,8 +163,8 @@ ul li a{
 .gradient-text{
   /* font-family: Arial, Helvetica, sans-serif; */
   display: block;
-  font-family: 'Roboto Mono', monospace;
-  /* font-family: "Cosi Azure"; */
+  /* font-family: 'Roboto Mono', monospace; */
+  font-family: "Cosi Azure";
  
   
   color:rgba(0,0,0,1);
@@ -359,7 +360,13 @@ li {
 
 /* @@@@@@@@@@@@@@@@@@ */
 
-
+.projects-title{
+  font-size: 180px;
+  padding: 8rem 0 10rem 0;
+margin:0 auto;
+color: rgba(255, 255, 255, 0.9);
+font-family: "Cosi Azure";
+}
 
 
 
@@ -379,7 +386,7 @@ li {
   
 }
 .nav-list {
-  padding-top: 340px;
+  /* padding-top: 340px; */
   padding-left: 150px;
   padding-bottom: 340px;
   /* position: absolute; */
@@ -387,7 +394,7 @@ li {
 
   /* istrinti jri neveiks prisilietimas  */
  /* border: 1px solid red; */
- max-width: 650px;
+ max-width: 400px;
  /* istrinti jri neveiks prisilietimas  */
 
  transition: transform .10s;
@@ -409,13 +416,17 @@ li {
 
 .navigation-link {
   font-family: "Cosi Azure";
-  font-size: 100px;
-  padding-top: 200px;
+  font-size: 80px;
+  padding-bottom: 200px;
   /* text-decoration: none; */
   color: rgba(255, 255, 255, 0.3);
   /* border: 1px solid red; */
   width: 400px;
 
+}
+
+.navigation-link span:nth-child(2), span:nth-child(3), span:nth-child(4), span:nth-child(5){
+font-size: 40px;
 }
 
 .navigation-link span {
@@ -426,7 +437,7 @@ li {
 }
 
 .navigation-link span:nth-child(1){
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .navigation-item span:before {
@@ -491,14 +502,29 @@ li {
       -ms-user-select: none; 
           user-select: none; 
 }
-/* @@@@@@@@@@@@distort content on scrool */
+/* @@@@@@@@@@@@ about page */
+.about-container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  padding: 10rem;
+  border:1px solid red;
+}
+.about-info{
+max-width: 600px;
+color:rgba(255, 255, 255, 0.7);
+font-family: "Cosi Azure";
+font-size: 25px;
+line-height: 1.9;
+}
 
 
 
 
 
-
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1000px){
 
   .menu-btn .material-icons { 
     font-size: 45px; 
@@ -535,9 +561,12 @@ li {
 
 
  /* portfolio */
+ .projects-title{
+   font-size: 50px;
+ }
  
  .nav-list{
-   padding-left: 10px;
+   padding-left: 40px;
    margin: 0;
    
    }
@@ -550,6 +579,9 @@ li {
 
     height: 250px;
     max-width: 400px !important;
+
+   
+
   }
 
  
@@ -561,12 +593,12 @@ li {
    }
    
    .navigation-item span:hover:before {
-    /* opacity: 0; */
+   
     
    }
    
      .navigation-link {
-       font-size: 50px;
+       font-size: 35px;
        width: 280px;
        
        /* border: 1px solid red; */
