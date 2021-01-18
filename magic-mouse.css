@@ -1,4 +1,4 @@
-html,* { cursor: none; }
+/*html,* { cursor: none; }*/
 body #magicMouseCursor {
   position: fixed;
   width: 35px;
@@ -43,3 +43,12 @@ body .magic-hover {
   body .magic-hover:hover {
     cursor: none; }
 
+@media only screen and (max-width: 980px){
+body #magicMouseCursor{
+  display: none;
+}
+
+body #magicPointer{
+display: none;
+}
+}

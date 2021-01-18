@@ -4,14 +4,14 @@ $(document).ready(function() {
         var tl = new TimelineLite();
 
         $(document)
-          .on("mouseover", ".navigation-item", function(evt) {
+          .on("mouseover", ".project-show", function(evt) {
             tl = new TimelineLite();
             tl.to($(".project-preview"), 1, {
               width: "600px",
               ease: Expo.easeInOut
             });
           })
-          .on("mouseout", ".navigation-item", function(evt) {
+          .on("mouseout", ".project-show", function(evt) {
             tl = new TimelineLite();
             tl.to($(".project-preview"), 0.5, {
               width: 0,
