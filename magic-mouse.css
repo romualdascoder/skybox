@@ -1,4 +1,4 @@
-/*html,* { cursor: none; }*/
+html,* { cursor: none !important;}
 body #magicMouseCursor {
   position: fixed;
   width: 35px;
@@ -10,6 +10,7 @@ body #magicMouseCursor {
   top: 0;
   transition: transform 0.07s, width 0.3s, height 0.3s;
   pointer-events: none; }
+
   body #magicMouseCursor.cursor-square {
     border-radius: 0; }
 
@@ -44,6 +45,10 @@ body .magic-hover {
     cursor: none; }
 
 @media only screen and (max-width: 980px){
+
+  html,* { 
+  cursor: auto !important;
+}
 body #magicMouseCursor{
   display: none;
 }
@@ -51,4 +56,9 @@ body #magicMouseCursor{
 body #magicPointer{
 display: none;
 }
+
 }
+
+
+
+

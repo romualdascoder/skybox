@@ -26,12 +26,12 @@ var typed = new Typed('.animate', {
 
 
   options = {
-    "cursorOuter": "circle-basic",
-    "hoverEffect": "circle-move",
+    "cursorOuter": "enabled",
+    "hoverEffect": "pointer-overlay",
     "hoverItemMove": false,
     "defaultCursor": false,
-    "outerWidth": 60,
-    "outerHeight": 60
+    "outerWidth": 50,
+    "outerHeight": 50
   }; 
   magicMouse(options);
  
