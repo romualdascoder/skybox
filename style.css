@@ -649,7 +649,7 @@ padding-right: 5rem;
 
 @media only screen and (max-width: 750px){
   .about-img img{
-    max-height: 330px;
+    max-height: 300px;
     max-width: 600px;
     
     }
