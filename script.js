@@ -210,7 +210,13 @@ if( isTouchEnabled() ) {
       
 
 
-    
+      
+VanillaTilt.init(document.querySelector(".js-tilt"),{
+  perspective: 100,
+  gyroscopeMinAngleX:-185, 
+});
+element.addEventListener("tiltChange", callback);
+      
 
 
     

@@ -1,4 +1,7 @@
-html,* { cursor: none !important;}
+html,* { 
+  cursor: none !important;
+/*-webkit-cursor: none !important;*/
+}
 body #magicMouseCursor {
   position: fixed;
   width: 35px;
