@@ -607,7 +607,12 @@ filter: grayscale(100%);
 
  
  
-
+@media only screen and (max-width: 1400px) {
+  
+  .nav-wrap{
+    background-image: none !important;
+   }
+}
 
 
 @media only screen and (max-width: 780px){
@@ -652,13 +657,7 @@ filter: grayscale(100%);
 
  /* portfolio */
 
- .nav-wrap{
-  background-size: 300px;
-  background-position: center center;
-  /* background-attachment: scroll !important; */
 
-  background-repeat: no-repeat;
- }
  .projects-title{
    font-size: 50px;
  }
@@ -742,16 +741,7 @@ font-size: 50px;
 
 
 
-@media only screen and (max-width: 1024px) {
-  
-  .nav-wrap{
-    background-size: 300px;
-    background-position: center center;
-    background-attachment: scroll !important;
-  
-   
-   }
-}
+
 
 
 
