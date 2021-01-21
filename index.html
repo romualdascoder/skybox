@@ -9,6 +9,7 @@
     
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="magic-mouse.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com">  -->
 <!-- <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> -->
@@ -68,7 +69,7 @@
   <section id="about">
    <div class="about-container">
     
-     <div class="about-info magic-hover">
+     <div class="about-info magic-hover" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="400">
        <p>const <span>info</span> = </p>
        <p>Informacinės technologijos yra mano gyvenimo būdas bei didžiausias pomėgis. Domiuosi įvairiomis IT naujovėmis, kasdien stengiuosi įgyti kuo daugiau patirties. Su kiekvienu projektu stengiuosi įgauti kuo daugiau patirties. Su kiekvienu projektu stengiuosi įgauti kuo daugiau patirties</p>
        <p>;</p>
@@ -85,7 +86,7 @@
     <!-- <div id="section1"> -->
       
       <div class="nav-wrap">
-        <p class="projects-title">Projektai</p>
+        <p class="projects-title" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="400">Projektai</p>
        
         <div class="project-preview-wrapper">
           <div class="project-preview">
@@ -148,7 +149,7 @@
 
 
     <div id="section2">
-      <p class="skills-title">Technologijos</p>
+      <p class="skills-title" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="400">Technologijos</p>
 <div class="skills-gallery">
   <img class="js-tilt " data-tilt src="img/slide7.png" alt="javascript">
   <img class="js-tilt" data-tilt src="img/slide5.png" alt="html">
@@ -171,6 +172,8 @@
 
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
     <script src="three.js"></script>
     <script src="OrbitControls.js"></script>
     

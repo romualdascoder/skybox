@@ -216,7 +216,8 @@ VanillaTilt.init(document.querySelector(".js-tilt"),{
   gyroscopeMinAngleX:-185, 
 });
 element.addEventListener("tiltChange", callback);
-      
+
+
 
 
     
