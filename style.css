@@ -22,16 +22,15 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: white;
+  /* background: white; */
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: black;
 }
 
-.loader > img {
-  /* width: 100%; */
-  min-width: 200px;
+.loader img {
+  max-width: 270px;
 }
 
 .loader.hidden {
@@ -359,13 +358,15 @@ li {
 /* @@@@@@@@@@@@@@@@@@ */
 
 .projects-title{
-  font-size: 120px;
-  padding: 8rem 0 10rem 0;
+  font-size: 280px;
+  z-index: 9999999;
+  padding: 8rem 0 5rem 0;
 margin:0 auto;
-color: rgba(255, 255, 255, 0.9);
+color: rgba(255, 255, 255, 0.4);
 font-family: "Cosi Azure";
 transition: .15s;
 }
+
 
 
 
@@ -380,14 +381,21 @@ transition: .15s;
   font-family: 'Roboto Mono', monospace;
   color: white;
 
+  /* border: 1px solid red; */
 
-  
+
+  background-image: url('overlaylogo.png');
+  background-size: 600px;
+  background-position: center 350px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* color: rgba(255, 255, 255, 0.3); */
   
 }
 .nav-list {
   /* padding-top: 340px; */
   padding-left: 150px;
-  padding-bottom: 340px;
+  /* padding-bottom: 140px; */
   /* position: absolute; */
 
 
@@ -563,9 +571,9 @@ align-items: center;
 
 .skills-title{
   color: white;
-  font-size: 120px;
-  margin: 8rem;
-  
+  font-size: 220px;
+  margin-bottom: 8rem;
+color: rgba(255, 255, 255, 0.1);
 }
 
 .skills-gallery{
@@ -602,7 +610,11 @@ filter: grayscale(100%);
 
 
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 780px){
+
+  .loader img {
+    max-width: 180px;
+  }
 
   .menu-btn .material-icons { 
     font-size: 45px; 
@@ -639,12 +651,19 @@ filter: grayscale(100%);
 
 
  /* portfolio */
+
+ .nav-wrap{
+  background-size: 300px;
+  background-position: center center;
+ }
  .projects-title{
    font-size: 50px;
  }
  .logo img{
    max-width: 90px;
  }
+
+
  
  .nav-list{
    padding-left: 40px;
