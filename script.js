@@ -23,6 +23,12 @@ var typed = new Typed('.animate', {
     
   });
 
+  AOS.init({
+    once: true,
+    offset: 400, 
+    delay: 0, 
+    duration: 1000 
+  });
 
 
   options = {
