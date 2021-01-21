@@ -655,7 +655,7 @@ filter: grayscale(100%);
  .nav-wrap{
   background-size: 300px;
   background-position: center center;
-  background-attachment: scroll !important;
+  /* background-attachment: scroll !important; */
 
   background-repeat: no-repeat;
  }
@@ -742,7 +742,16 @@ font-size: 50px;
 
 
 
-
+@media only screen and (max-width: 1024px) {
+  
+  .nav-wrap{
+    background-size: 300px;
+    background-position: center center;
+    background-attachment: scroll !important;
+  
+   
+   }
+}
 
 
 
