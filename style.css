@@ -655,7 +655,7 @@ filter: grayscale(100%);
  .nav-wrap{
   background-size: 300px;
   background-position: center center;
-  background-attachment: fixed, scroll;
+  background-attachment: initial;
   background-repeat: no-repeat;
  }
  .projects-title{
