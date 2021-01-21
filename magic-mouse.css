@@ -47,7 +47,7 @@ body .magic-hover {
   body .magic-hover:hover {
     cursor: none; }
 
-@media only screen and (max-width: 980px){
+@media only screen and (max-width: 1400px){
 
   html,* { 
   cursor: auto !important;
