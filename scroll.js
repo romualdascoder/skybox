@@ -11,7 +11,7 @@ let currentPixel = window.pageYOffset;
 const looper = function () {
   const newPixel = window.pageYOffset;
   const diff = newPixel - currentPixel
-  const speed = diff * 0.20;
+  const speed = diff * 0.10;
   
   section.style.transform = "skewY(" + speed + "deg)"
   aboutImg.style.transform = "skewY(" + speed + "deg)"
