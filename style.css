@@ -358,7 +358,7 @@ li {
 /* @@@@@@@@@@@@@@@@@@ */
 
 .projects-title{
-  font-size: 180px;
+  font-size: 150px;
   z-index: 999;
   padding: 4rem 0 10rem 0;
 margin:0 auto;
@@ -543,9 +543,17 @@ line-height: 1.9;
  /* padding-left: 5rem; */
 }
 
-.about-info p:nth-child(1){
+.about-info p:nth-child(1), p:nth-child(3){
   font-size: 70px;
+  line-height: 100px;
 }
+
+.about-info p:nth-child(3){
+  font-size: 60px;
+  line-height: 100px;
+}
+
+
 .about-info p span{
   color: rgb(53, 111, 81);
 }
@@ -570,7 +578,7 @@ line-height: 1.9;
 .cv-btn a {
   width: 100%;
   text-align: center;
-  text-decoration: none;
+  
   color: white;
 }
 
@@ -654,10 +662,10 @@ align-items: center;
 
 .skills-title{
   color: white;
-  font-size: 150px;
+  font-size: 130px;
   margin-bottom: 8rem;
 color: rgba(255, 255, 255, 0.5);
-
+font-family: "Cosi Azure";
 /* transition: .15s; */
 
 }
@@ -723,6 +731,27 @@ opacity: 0.9;
 }
 
 @media only screen and (max-width: 950px){
+
+  .about-container{
+    flex-wrap: wrap;
+  }
+
+  .about-img img{
+    max-height: 400px;
+    max-width: 350px;
+    }
+
+  .about-info{
+    transform: translate(0%) !important;
+    margin: 0 2rem 0 2rem;
+    font-size: 20px;
+   }
+
+   .about-img img{
+    opacity: 0.2;
+    padding-right: 0rem;
+    
+    }
 
   .nav-list{
     padding-left: 40px;
@@ -795,7 +824,9 @@ opacity: 0.9;
   font-size: 1rem;
   }
 
-
+  .about-container{
+    padding: 5rem 0 6rem 0;
+   }
 
 
  /* portfolio */
@@ -807,6 +838,10 @@ opacity: 0.9;
  }
  .logo img{
    max-width: 90px;
+ }
+
+ .cv-btn {
+   margin-top: 0rem;
  }
 
  .project-preview {
@@ -869,21 +904,9 @@ opacity: 0.9;
       font-size: 30px;
     }
 
-     .about-container{
-       flex-wrap: wrap;
-     }
+    
 
-     .about-info{
-      transform: translate(0%) !important;
-      padding: 0 2rem 0 2rem;
-      font-size: 20px;
-     }
-
-     .about-img img{
-      opacity: 0.2;
-      padding-right: 0rem;
-      
-      }
+    
 
       .skills-title{
 font-size: 80px;
@@ -963,9 +986,15 @@ margin:0 0 6rem 0;
 
 @media only screen and (max-width: 400px){
  
+  .about-info p:nth-child(1){
+    font-size: 15vw;
+  }
 
+  .navigation-link {
+    font-size: 10vw;
+    width: 200px;
+  }
  
-
   .nav-list{
     padding-left: 20px;
     
