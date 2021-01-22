@@ -845,7 +845,8 @@ opacity: 0.9;
  }
 
  .cv-btn {
-   margin-top: 0rem;
+   margin: 0 0 1rem 0;
+
  }
 
  .project-preview {
