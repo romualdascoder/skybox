@@ -62,7 +62,7 @@ max-width: 120px;
 }
 /* @@@@@@@@@@@@@@@@@@@@@ */
 .header-container{
-  height: 100vh;
+  min-height: 100vh;
   /* height: 100% ; */
   width: 100% ;
   background-color: black;
@@ -70,7 +70,7 @@ max-width: 120px;
 }
 #space{
   z-index: 1000000;
-  /* max-height:  100vh; */
+  /* height:  100vh; */
   height: 100%;
   width: 100%;
   background-color: black;
