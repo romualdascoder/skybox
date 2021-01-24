@@ -9,6 +9,9 @@ body {
   /* font-weight: bold; */
   /* overflow: hidden; */
 }
+canvas{
+  max-width: 100% !important;
+}
 
 .visaskonteineris{
   /* display: flex;
