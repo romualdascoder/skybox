@@ -806,7 +806,7 @@ textarea:focus {
     background-image: none !important;
    }
    .projects-title{
-    font-size: 120px;
+    font-size: 220px;
    }
    .skills-title{
      font-size: 120px;
@@ -835,6 +835,10 @@ textarea:focus {
     padding-right: 0rem;
     
     }
+
+    .projects-title{
+      font-size: 150px;
+     }
 
   .nav-list{
     padding-left: 40px;
@@ -1060,7 +1064,7 @@ margin:0 0 6rem 0;
     }
 
     .projects-title{
-      font-size: 60px;
+      font-size: 90px;
       padding-bottom: 7rem;
     }
 
