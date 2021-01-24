@@ -368,7 +368,7 @@ li {
   padding: 0rem 0 7rem 0;
 margin:0 auto;
 color: rgba(255, 255, 255, 0.1);
-
+font-weight: bold;
 font-family: "Cosi Azure";
 transition: .15s;
 }
@@ -671,6 +671,7 @@ align-items: center;
   margin-bottom: 10rem;
 color: rgba(255, 255, 255, 0.1);
 font-family: "Cosi Azure";
+font-weight: bold;
 /* transform: translate(5%) !important; */
 /* transition: .15s; */
 
@@ -806,10 +807,10 @@ textarea:focus {
     background-image: none !important;
    }
    .projects-title{
-    font-size: 220px;
+    font-size: 170px;
    }
    .skills-title{
-     font-size: 120px;
+     font-size: 150px;
    }
 }
 
@@ -837,7 +838,7 @@ textarea:focus {
     }
 
     .projects-title{
-      font-size: 150px;
+      font-size: 140px;
      }
 
   .nav-list{
@@ -871,7 +872,9 @@ textarea:focus {
        
       }   
  
- 
+ .skills-title{
+   font-size: 120px;
+ }
      
 }
 
@@ -924,7 +927,8 @@ textarea:focus {
 
 
  .projects-title{
-   /* font-size: 50px; */
+   font-size: 100px;
+   font-weight: bold;
    /* padding:0; */
  }
  .logo img{
@@ -1001,8 +1005,9 @@ textarea:focus {
     
 
       .skills-title{
-font-size: 80px;
+font-size: 100px;
 margin:0 0 6rem 0;
+font-weight: bold;
       }
      
       .skills-gallery img{
@@ -1066,10 +1071,12 @@ margin:0 0 6rem 0;
     .projects-title{
       font-size: 90px;
       padding-bottom: 7rem;
+      font-weight: bold;
     }
 
     .skills-title{
-      font-size: 50px;
+      font-size: 60px;
+      font-weight: bold;
     }
 
 
@@ -1102,11 +1109,13 @@ margin:0 0 6rem 0;
    }
 
       .projects-title{
-      font-size: 15vw;
+      font-size: 20vw;
+      font-weight: bold;
     }
 
     .skills-title{
       font-size: 15vw;
+      font-weight: bold;
     }
 
   }
