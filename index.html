@@ -175,6 +175,43 @@
     </div>
     </div>
 
+    <section id="contacts">
+      <p>Kontaktai</p>
+      <form name="contact-form" id="contact-form"  action="POST" data-netlify="true">
+
+        
+
+        <div class="form-titles">
+              <label for="contact-name">Vardas :</label>
+              <div class="textarea">
+                    <input type="text" name="name" id="name" value="" required>
+              </div>
+            </div>
+
+            <div class="form-titles">
+              <label for="contact-email">El. paštas :</label>
+              <div class="textarea">
+                    <input type="email" name="email" id="email" value="" required>
+              </div>
+            </div>
+
+            <div class="form-titles">
+              <label for="contact-project">Žinutė :</label>
+              <div class="textarea">
+                    <textarea type="email" name="message" id="message" rows="3" value="" required>
+                    </textarea>
+              </div>
+            </div>
+<div class="field">
+<div data-netlify-recaptcha="true"></div>
+</div>
+      
+
+        <button type="submit" name="submit" id="submit" class="send cv-btn">Siųsti</button>
+
+        </form>
+    </section>
+
 
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
