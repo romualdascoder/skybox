@@ -371,7 +371,7 @@ li {
   z-index: 999;
   padding: 0rem 0 7rem 0;
 margin:0 auto;
-color: rgba(255, 255, 255, 0.1);
+color: rgba(255, 255, 255, 0.2);
 font-weight: bold;
 font-family: "Cosi Azure";
 transition: .15s;
@@ -673,7 +673,7 @@ align-items: center;
   color: white;
   font-size: 180px;
   margin-bottom: 10rem;
-color: rgba(255, 255, 255, 0.1);
+color: rgba(255, 255, 255, 0.2);
 font-family: "Cosi Azure";
 font-weight: bold;
 /* transform: translate(5%) !important; */
@@ -725,7 +725,7 @@ opacity: 0.9;
   font-size: 180px;
   font-weight: bold;
   margin-bottom: 5rem;
-color: rgba(255, 255, 255, 0.1);
+color: rgba(255, 255, 255, 0.2);
 font-family: "Cosi Azure";
 
 
@@ -797,12 +797,13 @@ textarea:focus {
 }
 .contacts-details p{
 text-align: right;
-color: white;
+color: #999;
 font-size: 20px;
 font-family: "Cosi Azure";
+text-decoration: none;
 }
 .hr{
-background: white;
+background:#999;
 height: 1px;
 margin: 1rem 0 1rem 0;
 }
@@ -810,10 +811,12 @@ margin: 1rem 0 1rem 0;
 .contacts-phone{
   display: flex;
 justify-content: space-between;
+
 }
 .contacts-phone img{
 width:90px;
 height: 65px;
+opacity: 0.6 !important;
 }
  
  
@@ -1087,10 +1090,10 @@ padding-bottom: 1rem;
     .project-preview {
     
      top: 35%;
-      left: 3%;
+      left: 2%;
 
      height: 230px;
-     max-width: 380px !important;
+     max-width: 400px !important;
  
     
  
@@ -1165,10 +1168,10 @@ padding-bottom: 1rem;
     .project-preview {
     
      top: 35%;
-      left: 3%;
+      left: 2%;
 
      height: 190px;
-     max-width: 290px !important;
+     max-width: 360px !important;
    }
 
       .projects-title{
@@ -1188,7 +1191,17 @@ padding-bottom: 1rem;
 
  
 
-
+  @media only screen and (max-width: 370px){
+    .project-preview {
+    
+      
+       left: 1%;
+ 
+      
+      max-width: 310px !important;
+     
+    }
+  }
 
 
 
