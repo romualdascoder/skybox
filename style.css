@@ -822,7 +822,7 @@ height: 65px;
 opacity: 0.6 !important;
 }
 
-.contacts-phone div p{
+.contacts-phone div > p{
   text-decoration: none !important;
 }
  
