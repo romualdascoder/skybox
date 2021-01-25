@@ -803,7 +803,7 @@ text-align: right;
 color: #999;
 font-size: 20px;
 font-family: "Cosi Azure";
-text-decoration: none;
+text-decoration: none !important;
 }
 .hr{
 background:#999;
@@ -1076,7 +1076,7 @@ padding-bottom: 1rem;
 
       .contacts-year{
         padding:.5rem;
-        
+        text-decoration: none !important;
       }
 
 } 
