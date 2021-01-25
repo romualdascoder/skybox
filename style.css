@@ -173,10 +173,12 @@ ul li a{
   display: block;
   /* font-family: 'Roboto Mono', monospace; */
   font-family: "Cosi Azure";
- 
-  
-  color:rgba(0,0,0,1);
-  font-size: 85px;
+  -webkit-text-stroke: 0px;
+  /* color: rgb(74, 74, 74); */
+  font-weight: bold;
+  opacity: 0.25;
+  color:grey;
+  font-size: 80px;
   /* width:50vw; */
   /* z-index: 99999999; */
   /* border:1px solid red; */
@@ -184,7 +186,7 @@ ul li a{
   /* display:block; */
   /* text-align:center; */
   text-transform:uppercase;
-  font-weight:900;
+  /* font-weight:900; */
   /* transition: color .2s ease-in-out; */
   
 
@@ -196,7 +198,8 @@ ul li a{
   text-decoration: none; 
   transform: rotate(5deg);
   background-clip: text;
-  background: linear-gradient(to right, crimson,rgb(24, 95, 157),springgreen);
+  /* background: linear-gradient(to right, crimson,rgb(24, 95, 157),springgreen); */
+  background: linear-gradient(to right, rgb(62, 62, 62),rgb(255, 255, 255),rgb(74, 74, 74));
   background-size: 200% 200%;
   animation: rainbow 2s ease-in-out infinite;
   -webkit-background-clip: text;
@@ -226,7 +229,7 @@ ul li a{
 }
 
 .material-icons:hover { 
-  color: rgb(53, 111, 81);
+  color: rgba(255, 255, 255);
   
 }
 
@@ -249,7 +252,7 @@ ul li a{
 .overlay:before {
   animation: grain 1s steps(10) infinite;
   background-image: url(grain.png);
-  opacity: 0.1;
+  opacity: 0.11;
   content: "";
   height: 300%;
   
