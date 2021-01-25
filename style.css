@@ -661,7 +661,7 @@ filter: grayscale(100%);
 
 /* @@@@@@@@@@@@@@skills */
 
-#section2{
+#skills{
   min-height: 100vh;
   width: 100%;
   background-color: black;
@@ -820,6 +820,10 @@ justify-content: space-between;
 width:90px;
 height: 65px;
 opacity: 0.6 !important;
+}
+
+.contacts-phone div p{
+  text-decoration: none !important;
 }
  
  
