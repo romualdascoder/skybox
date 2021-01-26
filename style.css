@@ -251,8 +251,8 @@ ul li a{
 
 .overlay:before {
   animation: grain 1s steps(10) infinite;
-  background-image: url(grain.png);
-  opacity: 0.11;
+  background-image: url(img/grain.jpg);
+  opacity: 0.2;
   content: "";
   height: 300%;
   
@@ -397,7 +397,7 @@ transition: .15s;
   /* border: 1px solid red; */
 
 
-  background-image: url('overlaylogo.png');
+  background-image: url('img/overlaylogo.png');
   background-size: 450px;
   background-position: center center;
   background-attachment: fixed;

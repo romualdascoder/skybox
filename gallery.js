@@ -21,19 +21,19 @@ $(document).ready(function() {
       });
 
       $(".navigation-link-1").hover(function() {
-        $(".project-preview").css({ "background-image": "url(project1.gif)" });
+        $(".project-preview").css({ "background-image": "url(img/project1.gif)" });
       });
 
       $(".navigation-link-2").hover(function() {
-        $(".project-preview").css({ "background-image": "url(project2.gif)" });
+        $(".project-preview").css({ "background-image": "url(img/project2.gif)" });
       });
 
       $(".navigation-link-3").hover(function() {
-        $(".project-preview").css({ "background-image": "url(project3.gif)" });
+        $(".project-preview").css({ "background-image": "url(img/project3.gif)" });
       });
 
       $(".navigation-link-4").hover(function() {
-        $(".project-preview").css({ "background-image": "url(project4.gif)" });
+        $(".project-preview").css({ "background-image": "url(img/project4.gif)" });
       });
 
       $(".navigation-link-5").hover(function() {
