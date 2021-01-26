@@ -125,7 +125,6 @@ ul li a{
   font-weight: bold;
   color:rgba(255, 255, 255, 0.6);
   font-size: 80px;
-  /* text-transform:uppercase; */
 }
 .gradient-text:hover{
   color:rgba(0,0,0,0);
@@ -206,7 +205,6 @@ ul {
 
 li {
    font-size: 3rem;
-   /* text-transform: uppercase; */
    letter-spacing: 3px;
    text-align: center;
    color: #a9a6a9;
@@ -622,6 +620,15 @@ width:90px;
 height: 65px;
 opacity: 0.6 !important;
 }
+
+.rc-anchor-light {
+  background-color: transparent;
+  color: white;
+  }
+
+  .recaptcha-checkbox-border{
+    background-color: transparent;
+  }
 
 @media only screen and (max-width: 1400px) {
 
