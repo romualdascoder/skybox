@@ -556,7 +556,7 @@ line-height: 1.9;
 }
 
 .about-info p:nth-child(1){
-  font-size: 65px;
+  font-size: 70px;
   line-height: 100px;
 }
 
@@ -866,10 +866,15 @@ opacity: 0.6 !important;
 }
 
 @media only screen and (max-width: 950px){
+  
 
   .about-container{
     flex-wrap: wrap;
     padding-bottom: 3rem;
+  }
+
+  .about-info p:nth-child(1){
+    font-size: 68px;
   }
 
   .about-img img{
