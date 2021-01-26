@@ -5,7 +5,11 @@ window.addEventListener("load", function () {
 });
 
 // @@@@@@@@@@@@@@
-
+    document.addEventListener('DOMContentLoaded', (event) => {
+  const recaptcha = document.querySelector('.g-recaptcha');
+  recaptcha.setAttribute("data-theme", "dark");
+  recaptcha.style.zIndex = "9";
+});
 
 
 // @@@@@@@@@@@@@@@@@@@@@
@@ -226,10 +230,7 @@ element.addEventListener("tiltChange", callback);
 
 
 
-    document.addEventListener('DOMContentLoaded', (event) => {
-  const recaptcha = document.querySelector('.g-recaptcha');
-  recaptcha.setAttribute("data-theme", "dark");
-});
+
         
 
    
