@@ -621,10 +621,9 @@ height: 65px;
 opacity: 0.6 !important;
 }
 
-.rc-anchor-light {
-  background: black !important;
-  color: white !important;
-  }
+.rc-anchor-light { 
+  background: #000 !important; 
+  color: #000 !important; }
 
   .recaptcha-checkbox-border{
     background: black !important;
