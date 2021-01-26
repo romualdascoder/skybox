@@ -622,12 +622,12 @@ opacity: 0.6 !important;
 }
 
 .rc-anchor-light {
-  background-color: black !important;
+  background: black !important;
   color: white !important;
   }
 
   .recaptcha-checkbox-border{
-    background-color: black !important;
+    background: black !important;
   }
 
 @media only screen and (max-width: 1400px) {
