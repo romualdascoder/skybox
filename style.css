@@ -1,26 +1,14 @@
-
-
 body {
   margin: 0;
   padding: 0;
   border: 0;
-  
-  
-  /* font-weight: bold; */
-  /* overflow: hidden; */
 }
 canvas{
   max-width: 100% !important;
   max-height: 100% !important;
 }
+/* ******loader******* */
 
-.visaskonteineris{
-  /* display: flex;
-  flex-direction: column; */
- 
-}
-
-/* @@@@@@@@@@@@@@@@@@@@ loader*/
 .loader {
   position: fixed;
   z-index: 9999999999;
@@ -28,7 +16,6 @@ canvas{
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: white; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +27,6 @@ canvas{
 }
 
 .loader.hidden {
-  /* background-color: black; */
   animation: fadeOut 0.5s;
   transition-timing-function: ease;
   animation-fill-mode: forwards;
@@ -64,30 +50,22 @@ margin: 30px 0 0 10px;
 max-width: 120px;
 
 }
-/* @@@@@@@@@@@@@@@@@@@@@ */
+
+/* ********header********* */
+
 .header-container{
   min-height: 100vh;
-  /* height: 100% ; */
   width: 100% ;
   background-color: black;
-  
 }
 #space{
   z-index: 1000000;
-  /* height:  100vh; */
   height: 100%;
   width: 100%;
   background-color: black;
- 
 }
-
 #info{  
   position: absolute;
-  /* display: block;
-  height: auto;
-  width: auto;
-  max-width: 50vw;
-  max-height: 50vh; */
   top: 50%;  
   left: 50%; 
   transform: translate(-50%, -50%);
@@ -95,10 +73,6 @@ max-width: 120px;
   color: white;
   font-family: 'Roboto Mono', monospace;
   max-width: 700px;
-  /* min-height: 50px; */
-  /* font-weight: 400; */
-  /* font-size: 2rem; */
-  /* border: 1px solid red; */
   -webkit-touch-callout: none; 
   -webkit-user-select: none; 
    -khtml-user-select: none; 
@@ -111,33 +85,18 @@ max-width: 120px;
   display: flex;
   flex-wrap: wrap;
   font-size: 2rem;
-  
 }
 .animate{
-  /* color: rgba(0, 0, 0, 1); */
   color: rgb(53, 111, 81);
-  
 }
-
-
-
-
-/* @@@@@@@@@@@@@@@@*/
-
-/* pirmas menu */
-
-
-
-
+/* ----------menu--------- */
 
 .menu-btn button {
    border: none;
    background: none;
    position: fixed;
    padding: 30px 20px 0 0;
-
    right: 0%;
-  
    z-index: 10000;
 }
 
@@ -152,45 +111,21 @@ max-width: 120px;
 
 i {
    outline: none;
-   /* padding: 2rem; */
    color: #fff;
-  
 }
 
 ul li a{
-  
-  
-  
   -webkit-text-stroke: 0.6px rgb(172, 172, 172);
-
-  
 }
 
-
-
 .gradient-text{
-  /* font-family: Arial, Helvetica, sans-serif; */
   display: block;
-  /* font-family: 'Roboto Mono', monospace; */
   font-family: "Cosi Azure";
   -webkit-text-stroke: 0px;
-  /* color: rgb(74, 74, 74); */
   font-weight: bold;
   color:rgba(255, 255, 255, 0.6);
-  /* color:grey; */
   font-size: 80px;
-  /* width:50vw; */
-  /* z-index: 99999999; */
-  /* border:1px solid red; */
-  /* margin:30vh auto; */
-  /* display:block; */
-  /* text-align:center; */
   text-transform:uppercase;
-  /* font-weight:900; */
-  /* transition: color .2s ease-in-out; */
-  
-
- 
 }
 .gradient-text:hover{
   color:rgba(0,0,0,0);
@@ -198,7 +133,6 @@ ul li a{
   text-decoration: none; 
   transform: rotate(5deg);
   background-clip: text;
-  /* background: linear-gradient(to right, crimson,rgb(24, 95, 157),springgreen); */
   background: linear-gradient(to right, rgb(62, 62, 62),rgb(255, 255, 255),rgb(74, 74, 74));
   background-size: 200% 200%;
   animation: rainbow 2s ease-in-out infinite;
@@ -207,10 +141,6 @@ ul li a{
 
 .rotate:hover{
   transform: rotate(-5deg);
-  
-  
-
- 
 }
 
 @keyframes rainbow { 
@@ -218,26 +148,16 @@ ul li a{
   50%{background-position:right}
   100%{background-position:left}
 }
-
-/* ul li a:hover {
-  color: white;
-  text-decoration: none;
-} */
-
 .material-icons.md-48 {
   font-size: 60px; 
 }
-
 .material-icons:hover { 
   color: rgba(255, 255, 255);
-  
 }
-
 .row, .col-lg {
    margin: 0 !important;
    padding: 0 !important;
 }
-
 .col-lg {
   z-index: 1000;
    height: 100vh;
@@ -251,17 +171,14 @@ ul li a{
 
 .overlay:before {
   animation: grain 1s steps(10) infinite;
-  background-image: url(img/grain.jpg);
+  background-image: url(/img/grain.jpg);
   opacity: 0.2;
   content: "";
   height: 300%;
-  
   left: -50%;
-  /* opacity: 0.48; */
   position: fixed;
   top: -110%;
   width: 300%;
-
 }
 
 @keyframes grain {
@@ -277,17 +194,6 @@ ul li a{
   90% { transform: translate(-10%, 10%); }
 }
 
-/* .overlay h1 {
-  position: fixed;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   font-size: 25rem;
-   font-family: Poppins;
-   font-weight: 800;
-   color: rgb(53, 111, 81, 0.2)
-} */
-
 ul {
   position: fixed;
    top: 50%;
@@ -296,76 +202,22 @@ ul {
    list-style: none;
    margin: 0;
    padding: 0;   
-   
 }
 
-/* .logo {
-   background: url(logo.gif);
-   width: 140px;
-   height: 40px;
-} */
-
 li {
-  
-   /* top: 50%; */
-   /* padding-top: 100px; */
-   /* font-family: Poppins; */
    font-size: 3rem;
-   /* font-weight: 300; */
    text-transform: uppercase;
    text-align: center;
    color: #a9a6a9;
-   
 }
 
-
-
- /* .row{ 
-  position: fixed;
-  padding-top:10000px;
-  transform: translateY(-100%);
-  height: 100vh;
-  width: 100%; 
-} 
-
-.display-block{
-  padding-top:0px; 
-  transform: translateY(0%);
-  display: none;
-  display: block;
-} */
-
 .row{
-/* padding-right: 10000000px; */
-  /* transform: translateY(-100%); */
-  /* display: none; */
-  /* position: fixed; */
   visibility: hidden;
 }
 
 .showNav {
-  /* padding-right: 0px; */
   visibility:visible;
-  /* position: fixed; */
-  /* display: block; */
-  /* show the menu */
-  /* transform: translateY(0); */
 }
-
-
-
-
-/* #section1{
-  min-height: 100vh;
-  background-color: black;
-  font-family: 'Roboto Mono', monospace;
-  color: white;
-} */
-
-
-
-
-
 
 /* @@@@@@@@@@@@@@@@@@ */
 
@@ -380,9 +232,6 @@ font-family: "Cosi Azure";
 transition: .15s;
 }
 
-
-
-
 .nav-wrap{
   display: flex;
   flex-direction: column;
@@ -393,30 +242,17 @@ transition: .15s;
   background-color: black;
   font-family: 'Roboto Mono', monospace;
   color: white;
-
-  /* border: 1px solid red; */
-
-
   background-image: url('img/overlaylogo.png');
   background-size: 450px;
   background-position: center center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  /* color: rgba(255, 255, 255, 0.3); */
-  
+  background-repeat: no-repeat;  
 }
 .nav-list {
-  /* padding-top: 340px; */
   padding-left: 150px;
-  /* padding-bottom: 140px; */
-  /* position: absolute; */
-
-
-  /* istrinti jri neveiks prisilietimas  */
- /* border: 1px solid red; */
+  /* delete if tuoch doent works  */
  max-width: 400px;
- /* istrinti jri neveiks prisilietimas  */
-
+ /* delete if tuoch doesnt works  */
  transition: transform .10s;
  will-change: transform;
 }
@@ -428,26 +264,16 @@ transition: .15s;
    -khtml-user-select: none; 
      -moz-user-select: none; 
       -ms-user-select: none; 
-          user-select: none; 
-          /* border: 1px solid red;                          */
-  /*margin: 120px 0;*/
-  
+          user-select: none;  
 }
 
 .navigation-link {
   font-family: "Cosi Azure";
   font-size: 80px;
   padding-bottom: 200px;
-  /* text-decoration: none; */
   color: rgba(255, 255, 255, 0.3);
-  /* border: 1px solid red; */
   width: 400px;
-
 }
-
-/* .navigation-link span:nth-child(2), span:nth-child(3), span:nth-child(4), span:nth-child(5){
-font-size: 40px;
-} */
 
 .navigation-link span:not(:first-child){
   font-size: 40px;
@@ -460,8 +286,6 @@ font-size: 40px;
 .navigation-link span {
   position: relative;
   display: block;
-  
- 
 }
 
 .navigation-link span:nth-child(1){
@@ -469,7 +293,6 @@ font-size: 40px;
 }
 
 .navigation-item span:before {
-
   width: 0;
   color: #ffffff;
   overflow: hidden;
@@ -490,23 +313,18 @@ font-size: 40px;
   position: absolute;
   display: flex;
   justify-content: center;
-  
 }
 
 .project-preview {
   z-index: 99999999 !important;
   position: fixed;
-  /* position: absolute; */
   top: 35%;
   left: 40%;
   max-width: 600px;
   height: 350px;
-/*  max-width: 400px;
-  max-height: 400px;*/
   background: url(img-1.jpg) no-repeat 50% 50%;
   background-size: cover;
   overflow: hidden;
-  
 }
 
 .closeBtn{
@@ -530,18 +348,16 @@ font-size: 40px;
       -ms-user-select: none; 
           user-select: none; 
 }
-/* @@@@@@@@@@@@ about page */
+/* ---------about page------------ */
+
 .about-container{
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
   width: 100%;
   min-height: 100vh;
   background-color: black;
-  /* padding: 10rem 0 0rem 0; */
   overflow: hidden;
-  /* border: 1px solid red; */
 }
 .about-info{
 width: 650px;
@@ -549,10 +365,7 @@ color:rgba(255, 255, 255, 0.7);
 font-family: "Cosi Azure";
 font-size: 25px;
 line-height: 1.9;
-/* padding-right: 2rem; */
-/* border: 1px solid red; */
  transform: translate(20%) !important;
- /* padding-left: 5rem; */
 }
 
 .about-info p:nth-child(1){
@@ -575,8 +388,6 @@ line-height: 1.9;
   width: 150px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.7);
-  
-  
   font-size: 30px;
   -webkit-tap-highlight-color: transparent;
   display: flex;
@@ -586,13 +397,11 @@ line-height: 1.9;
   z-index: 0;
   transition: 1s;
  margin-top: 3rem;
- 
 }
 
 .cv-btn a {
   width: 100%;
   text-align: center;
-  
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -620,8 +429,7 @@ line-height: 1.9;
      -khtml-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
-            user-select: none;
-            
+            user-select: none;    
 }
 
 .cv-btn:hover::before {
@@ -661,7 +469,7 @@ filter: grayscale(100%);
 }
 
 
-/* @@@@@@@@@@@@@@skills */
+/* ---------skills----------- */
 
 #skills{
   min-height: 100vh;
@@ -671,7 +479,6 @@ overflow: hidden;
 display: flex;
 flex-direction: column;
 align-items: center;
-
 }
 
 .skills-title{
@@ -681,9 +488,6 @@ align-items: center;
 color: rgba(255, 255, 255, 0.2);
 font-family: "Cosi Azure";
 font-weight: bold;
-/* transform: translate(5%) !important; */
-/* transition: .15s; */
-
 }
 
 .skills-gallery{
@@ -705,8 +509,6 @@ height: 100%;
 margin: 0rem 1rem 1rem 1rem;
 filter: grayscale(80%);
 opacity: 0.9;
-/* border: 1px solid red; */
-
 }
 
 .skills-gallery img:hover{
@@ -715,7 +517,7 @@ opacity: 0.9;
   opacity: 1;
 }
  
-/* *********contacts*/
+/* ----------contacts page------------ */
 
 #contacts{
   min-height: 100vh;
@@ -732,15 +534,8 @@ opacity: 0.9;
   margin-bottom: 5rem;
 color: rgba(255, 255, 255, 0.2);
 font-family: "Cosi Azure";
-
-
 }
-#contact-form {
-  /* border: 1px solid red; */
-  
-  /* border-radius: 5px; */
-  /* margin-bottom: 40px; */
-  
+#contact-form { 
   width: 850px;
   max-width: 100%;
   padding: 40px;
@@ -784,21 +579,17 @@ textarea:focus {
 .send {
   margin: 40px 0 10px 8px !important;
   text-transform: uppercase;
-  /* padding: 20px; */
   background: transparent;
   color: white;
   font-size: 16px;
   letter-spacing: 1px;
   width: 150px;
- 
 }
 
 .contacts-details{
   max-width: 1000px;
   width: 100%;
   padding:5rem 2rem 2rem 2rem;
-  /* height: 100px; */
-/* border: 1px solid red; */
 }
 .contacts-details p{
 text-align: right;
@@ -824,7 +615,6 @@ margin: 1rem 0 1rem 0;
 .contacts-phone{
   display: flex;
 justify-content: space-between;
-
 }
 .contacts-phone img{
 width:90px;
@@ -832,9 +622,6 @@ height: 65px;
 opacity: 0.6 !important;
 }
 
-
- 
- 
 @media only screen and (max-width: 1400px) {
 
   .touch-btn{
@@ -905,28 +692,13 @@ opacity: 0.6 !important;
     }
     
     .project-preview {
-    
-    
       left: 35%;
-
      height: 290px;
      max-width: 450px !important;
- 
-    
- 
    }
- 
-  
-    
-   
-    
-
-    
       .navigation-link {
         font-size: 70px;
         width: 380px;
-        
-       
       }   
  
  .skills-title{
@@ -948,27 +720,13 @@ opacity: 0.6 !important;
   .menu-btn .material-icons { 
     font-size: 45px; 
   }
-   
-
-
-  .overlay h1 {
-        /* font-size: 0px; */
-        /* visibility: hidden; */
-  }
+  
   .gradient-text{
    margin: 25px;
  font-size: 30px;
   color:white;
   -webkit-text-stroke: 0px;
- 
   }
-  /* .gradient-text:hover{
-   transform: rotate(0deg);
-  }
-  .rotate:hover{
-   transform: rotate(0deg);
-   
- } */
 
  #info h1{
   font-size: 1rem;
@@ -983,13 +741,10 @@ opacity: 0.6 !important;
     line-height: 55px;
   }
 
- /* portfolio */
-
+ /* --------portfolio--------- */
 
  .projects-title{
    font-size: 100px;
-   /* font-weight: bold; */
-   /* padding:0; */
  }
  .logo img{
    max-width: 90px;
@@ -997,77 +752,23 @@ opacity: 0.6 !important;
 
  .cv-btn {
    margin: 0 0 1rem 0;
-
  }
 
  .project-preview {
-   
-  
-
   height: 250px;
   max-width: 380px !important;
-
- 
-
 }
-
-
- 
- /* .nav-list{
-   padding-left: 40px;
-   margin: 0;
-   
-   }
-   
-   .project-preview {
-   
-    top: 35%;
-     left: 2%;
-
-    height: 250px;
-    max-width: 400px !important;
-
-   
-
-  }
-
- 
-   
-   .navigation-item {
-    
-     margin-top: 120px;
-     
-   }
-   
-   .navigation-item span:hover:before {
-   
-    
-   }
-   
-     .navigation-link {
-       font-size: 35px;
-       width: 280px;
-       
-      
-     } */
      .navigation-link {
       font-size: 65px;
       width: 200px;
-      /* border: 1px solid red; */
      }
 
      .navigation-link span:not(:first-child){
       font-size: 30px;
     }
-
-    
-
-    
-
       .skills-title{
 font-size: 100px;
 margin:0 0 6rem 0;
-/* font-weight: bold; */
       }
      
       .skills-gallery img{
@@ -1102,72 +803,40 @@ padding-bottom: 1rem;
   .nav-list{
     padding-left: 40px;
     margin: 0;
-    
     }
-
-    
-    
     .project-preview {
-    
      top: 35%;
       left: 2%;
-
      height: 230px;
      max-width: 400px !important;
- 
-    
- 
    }
- 
-  
-    
-    .navigation-item {
-     
-      /* margin-top: 120px; */
-      
-    }
-    
-    /* .navigation-item span:hover:before {
-    
-     
-    } */
-    
       .navigation-link {
         font-size: 35px;
         width: 280px;
         padding-bottom: 150px;
-       
       }
 
       .navigation-link span:not(:first-child){
         font-size: 25px;
       }
-
-  
   .about-img img{
     max-height: 350px;
     max-width: 300px;
-    
     }
 
     .projects-title{
       font-size: 70px;
       padding-bottom: 7rem;
-      /* font-weight: bold; */
     }
 
     .skills-title{
       font-size: 60px;
-      /* font-weight: bold; */
     }
 
     .contacts-title{
       font-size: 60px;
     }
-
-
 }
-
 
 @media only screen and (max-width: 400px){
  
@@ -1182,44 +851,29 @@ padding-bottom: 1rem;
  
   .nav-list{
     padding-left: 20px;
-    
     }
     
     .project-preview {
-    
      top: 35%;
       left: 2%;
-
      height: 190px;
      max-width: 360px !important;
    }
-
       .projects-title{
       font-size: 15vw;
-      
     }
-
     .skills-title{
       font-size: 15vw;
-      
     }
     .contacts-title{
       font-size: 15vw;
     }
-
   }
-
- 
 
   @media only screen and (max-width: 370px){
     .project-preview {
-    
-      
        left: 1%;
- 
-      
       max-width: 310px !important;
-     
     }
   }
 
