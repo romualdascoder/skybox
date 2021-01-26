@@ -176,8 +176,8 @@ ul li a{
   -webkit-text-stroke: 0px;
   /* color: rgb(74, 74, 74); */
   font-weight: bold;
-  opacity: 0.25;
-  color:grey;
+  color:rgba(255, 255, 255, 0.6);
+  /* color:grey; */
   font-size: 80px;
   /* width:50vw; */
   /* z-index: 99999999; */
@@ -822,9 +822,7 @@ height: 65px;
 opacity: 0.6 !important;
 }
 
-.contacts-phone div:nth-child(1){
-  text-decoration: none !important;
-}
+
  
  
 @media only screen and (max-width: 1400px) {
