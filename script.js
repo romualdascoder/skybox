@@ -170,12 +170,12 @@ if( isTouchEnabled() ) {
 
         
         let materialArray = [];
-        let texture_ft = new THREE.TextureLoader().load( 'Front_Tex.jpg');
-        let texture_bk = new THREE.TextureLoader().load( 'Back_Tex.jpg');
-        let texture_up = new THREE.TextureLoader().load( 'Up_Tex.jpg');
-        let texture_dn = new THREE.TextureLoader().load( 'Down_Tex.jpg');
-        let texture_rt = new THREE.TextureLoader().load( 'Right_Tex.jpg');
-        let texture_lf = new THREE.TextureLoader().load( 'Left_Tex.jpg');
+        let texture_ft = new THREE.TextureLoader().load( 'img/Front_Tex.jpg');
+        let texture_bk = new THREE.TextureLoader().load( 'img/Back_Tex.jpg');
+        let texture_up = new THREE.TextureLoader().load( 'img/Up_Tex.jpg');
+        let texture_dn = new THREE.TextureLoader().load( 'img/Down_Tex.jpg');
+        let texture_rt = new THREE.TextureLoader().load( 'img/Right_Tex.jpg');
+        let texture_lf = new THREE.TextureLoader().load( 'img/Left_Tex.jpg');
         
           
         materialArray.push(new THREE.MeshBasicMaterial( { map: texture_ft }));
