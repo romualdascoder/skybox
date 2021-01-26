@@ -125,7 +125,7 @@ ul li a{
   font-weight: bold;
   color:rgba(255, 255, 255, 0.6);
   font-size: 80px;
-  text-transform:uppercase;
+  /* text-transform:uppercase; */
 }
 .gradient-text:hover{
   color:rgba(0,0,0,0);
@@ -206,7 +206,8 @@ ul {
 
 li {
    font-size: 3rem;
-   text-transform: uppercase;
+   /* text-transform: uppercase; */
+   letter-spacing: 3px;
    text-align: center;
    color: #a9a6a9;
 }
@@ -242,7 +243,7 @@ transition: .15s;
   background-color: black;
   font-family: 'Roboto Mono', monospace;
   color: white;
-  background-image: url('img/overlaylogo.png');
+  background-image: url('/img/overlaylogo.png');
   background-size: 450px;
   background-position: center center;
   background-attachment: fixed;
@@ -322,7 +323,7 @@ transition: .15s;
   left: 40%;
   max-width: 600px;
   height: 350px;
-  background: url(img-1.jpg) no-repeat 50% 50%;
+  background: no-repeat 50% 50%;
   background-size: cover;
   overflow: hidden;
 }
