@@ -3,7 +3,7 @@ const aboutImg = document.querySelector(".about-img");
 // const projectsTitle = document.querySelector(".projects-title");
 // const skillsTitle = document.querySelector(".skills-title");
 const skillsGallery = document.querySelector(".skills-gallery");
-const projectsgallery2 = document.querySelector(".projects-gallery2");
+const projectsGalleryContainer = document.querySelector(".projects-gallery-container");
 
 let currentPixel = window.pageYOffset;
 
@@ -19,7 +19,7 @@ const looper = function () {
   // projectsTitle.style.transform = "skewY(" + speed + "deg)"
   // skillsTitle.style.transform = "skewY(" + speed + "deg)"
   skillsGallery.style.transform = "skewY(" + speed + "deg)"
-  projectsgallery2.style.transform = "skewY(" + speed + "deg)"
+  projectsGalleryContainer.style.transform = "skewY(" + speed + "deg)"
   
   currentPixel = newPixel;
   
