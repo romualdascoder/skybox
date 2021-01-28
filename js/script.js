@@ -165,7 +165,7 @@ init();
 
 //  -----------------------
 
-// VanillaTilt.init(document.querySelector(".js-tilt"), {
-//   perspective: 20,
-//   gyroscopeMinAngleX: -185,
-// });
+VanillaTilt.init(document.querySelector(".js-tilt"), {
+  perspective: 20,
+  gyroscopeMinAngleX: -185,
+});
