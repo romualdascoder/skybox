@@ -224,6 +224,7 @@ li {
   font-size: 190px;
   z-index: 999;
   padding: 0rem 0 7rem 0;
+  
 margin:0 auto;
 color: rgba(255, 255, 255, 0.2);
 font-weight: bold;
@@ -257,7 +258,8 @@ justify-content: center;
 max-width: 1300px;
 /* border: 1px solid red; */
 transition: 1s;
-padding-bottom: 5rem;
+padding-bottom: 8rem;
+
 }
 
 .projects-gallery-items{
@@ -267,7 +269,8 @@ padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
   max-width: 500px;
-  margin: 6rem 4rem 6rem 4rem;
+  /* margin: 6rem 4rem 6rem 4rem; */
+  margin: 0rem 4rem 4rem 4rem;
   transition: 1s;
   /* border: 1px solid red; */
 }
@@ -278,6 +281,7 @@ width: 100%;
 height: 250px;
 /* height: 100%; */
 opacity: 0.8;
+border-radius: 1%;
 }
 .projects-gallery-items-title{
   transform: translateZ(60px);
@@ -307,7 +311,10 @@ opacity: 0.8;
 }
 
 
-
+.projects-gallery-items:nth-child(2), .projects-gallery-items:nth-child(4){
+  /* border: 1px solid red; */
+padding-top: 7rem;
+}
 
 
 
@@ -460,7 +467,7 @@ filter: grayscale(100%);
 /* ---------skills----------- */
 
 #skills{
-  min-height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   background-color: black;
 overflow: hidden;
@@ -472,7 +479,7 @@ align-items: center;
 .skills-title{
   color: white;
   font-size: 180px;
-  margin-bottom: 10rem;
+  margin-bottom: 7rem;
 color: rgba(255, 255, 255, 0.2);
 font-family: "Cosi Azure";
 font-weight: bold;
@@ -483,18 +490,18 @@ font-weight: bold;
   justify-content: center;
 align-items: center;
   flex-wrap: wrap;
-  margin: 0rem 0 8rem 0rem; 
-  max-width: 600px;
+  margin: 0rem 0 12rem 0rem; 
+  max-width: 700px;
   min-height: 300px;
   transition: .15s;
  } 
 
 .skills-gallery img{
-max-width: 90px;
-max-height: 90px;
+max-width: 95px;
+max-height: 95px;
 width: 100%;
 height: 100%;
-margin: 0rem 1rem 1rem 1rem;
+margin: 0rem 1.5rem 1.5rem 1.5rem;
 filter: grayscale(80%);
 opacity: 0.9;
 }
@@ -804,15 +811,21 @@ padding-bottom: 1rem;
 
     .projects-title{
       font-size: 70px;
-      padding-bottom: 7rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
     }
 
     .skills-title{
       font-size: 60px;
     }
 
+    .skills-gallery{
+      margin-bottom:7rem;
+    }
+
     .contacts-title{
       font-size: 60px;
+      margin-bottom: 2.5rem;
     }
 }
 
