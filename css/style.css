@@ -4,7 +4,7 @@ body {
   border: 0;
 }
 canvas{
-  max-width: 100% !important;
+  min-width: 100% !important;
   max-height: 100% !important;
 }
 /* ******loader******* */
@@ -467,7 +467,7 @@ filter: grayscale(100%);
 /* ---------skills----------- */
 
 #skills{
-  min-height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   background-color: black;
 overflow: hidden;
