@@ -26,7 +26,9 @@ mediaQueryList.addEventListener('change', event => {
   if (event.matches) {
     
     document.getElementById("info").style.color = 'blue';
-  } 
+  } else{
+    document.getElementById("info").style.color = 'white';
+  }
 });
 
   
