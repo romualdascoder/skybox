@@ -4,8 +4,9 @@ window.addEventListener("load", function () {
 });
 
 // -----------------------------
+const recaptcha = document.querySelector('.g-recaptcha');
 document.addEventListener('DOMContentLoaded', (event) => {
-  const recaptcha = document.querySelector('.g-recaptcha');
+  
   recaptcha.setAttribute("data-theme", "dark");
   
   // recaptcha.style.zIndex = "9";
