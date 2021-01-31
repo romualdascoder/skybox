@@ -4,34 +4,21 @@ window.addEventListener("load", function () {
 });
 
 // -----------------------------
-// const recaptcha = document.querySelector('.g-recaptcha');
+const recaptcha = document.querySelector('.g-recaptcha');
 document.addEventListener('DOMContentLoaded', (event) => {
   recaptcha.setAttribute("data-theme", "dark");
 });
 
-// const mediaQuery = window.matchMedia('(max-width: 600px)');
-// if (mediaQuery.matches) {
-//   window.addEventListener('resize', function(){
-//     recaptcha.setAttribute("data-size", "compact");
-//   });
-  
-// }
+const mediaQuery = window.matchMedia('(max-width: 600px)');
+if (mediaQuery.matches) {
 
-const recaptcha = document.querySelector('.g-recaptcha');
-const mediaQuery = '(max-width: 600px)';
-const mediaQueryList = window.matchMedia(mediaQuery);
-
-mediaQueryList.addEventListener('change', event => {
-    
-  if (event.matches) {
-    
-    document.getElementById("info").style.color = 'blue';
     recaptcha.setAttribute("data-size", "compact");
-  } else{
-    document.getElementById("info").style.color = 'white';
-    recaptcha.setAttribute("data-size", "normal");
-  }
-});
+
+  
+}
+
+
+
 
   
 // ----------------------------
