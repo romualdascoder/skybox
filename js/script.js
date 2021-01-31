@@ -4,7 +4,7 @@ window.addEventListener("load", function () {
 });
 
 // -----------------------------
-const recaptcha = document.querySelector('.g-recaptcha');
+// const recaptcha = document.querySelector('.g-recaptcha');
 document.addEventListener('DOMContentLoaded', (event) => {
   recaptcha.setAttribute("data-theme", "dark");
 });
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   
 // }
 
-
+const recaptcha = document.querySelector('.g-recaptcha');
 const mediaQuery = '(max-width: 600px)';
 const mediaQueryList = window.matchMedia(mediaQuery);
 
