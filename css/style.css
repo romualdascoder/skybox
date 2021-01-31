@@ -174,7 +174,7 @@ ul li a{
 .overlay:before {
   animation: grain 1s steps(10) infinite;
   background-image: url(/img/grain.jpg);
-  opacity: 0.15;
+  opacity: 0.18;
   content: "";
   height: 300%;
   left: -50%;
