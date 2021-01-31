@@ -9,14 +9,27 @@ document.addEventListener('DOMContentLoaded', (event) => {
   recaptcha.setAttribute("data-theme", "dark");
 });
 
-const mediaQuery = window.matchMedia('(max-width: 600px)');
-if (mediaQuery.matches) {
-  window.addEventListener('resize', function(){
-    recaptcha.setAttribute("data-size", "compact");
-  });
+// const mediaQuery = window.matchMedia('(max-width: 600px)');
+// if (mediaQuery.matches) {
+//   window.addEventListener('resize', function(){
+//     recaptcha.setAttribute("data-size", "compact");
+//   });
   
-}
+// }
 
+
+if (matchMedia) {
+  const mq = window.matchMedia("(max-width: 600px)");
+  mq.addEventListener(WidthChange);
+  WidthChange(mq);
+  }
+
+  function WidthChange(mq) {
+    if (mq.matches) {
+      recaptcha.setAttribute("data-size", "compact");
+    } 
+    
+    }
 // ----------------------------
 
 const typed = new Typed('.animate', {
