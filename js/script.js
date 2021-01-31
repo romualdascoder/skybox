@@ -9,13 +9,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
   recaptcha.setAttribute("data-theme", "dark");
 });
 
-const mediaQuery = window.matchMedia('(max-width: 600px)');
-if (mediaQuery.matches) {
 
-    recaptcha.setAttribute("data-size", "compact");
 
-  
-}
 
 
 
