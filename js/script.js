@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 if (matchMedia) {
   const mq = window.matchMedia("(max-width: 600px)");
-  mq.addEventListener(WidthChange);
+  mq.addListener(WidthChange);
   WidthChange(mq);
   }
 
