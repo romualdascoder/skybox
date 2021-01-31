@@ -9,7 +9,8 @@ canvas{
 }
 
 iframe{
-  padding-left: 1rem;
+  background-color: red;
+  margin-left: 1rem;
 }
 /* ******loader******* */
 
