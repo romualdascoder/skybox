@@ -18,16 +18,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
 // }
 
 
-// const mediaQuery = '(max-width: 600px)';
-// const mediaQueryList = window.matchMedia(mediaQuery);
+const mediaQuery = '(max-width: 600px)';
+const mediaQueryList = window.matchMedia(mediaQuery);
 
-// mediaQueryList.addEventListener('change', event => {
+mediaQueryList.addEventListener('change', event => {
     
-//   if (event.matches) {
-//     recaptcha.setAttribute("data-size", "compact");
+  if (event.matches) {
+    alert("hi")
     
-//   } 
-// });
+  } 
+});
 
   
 // ----------------------------
