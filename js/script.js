@@ -12,12 +12,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 // ----------------------------
 
-var typed = new Typed('.animate', {
+const typed = new Typed('.animate', {
   strings: [
     ".portfolio();",
     ".web();",
-    ".design();",
-    ".photography();"
+    ".design();"
   ],
   backSpeed: 60,
   typeSpeed: 60,
