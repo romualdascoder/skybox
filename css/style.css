@@ -658,7 +658,8 @@ opacity: 0.6 !important;
 
   .about-container{
     flex-wrap: wrap;
-    padding-bottom: 3rem;
+    /* padding-bottom: 3rem; */
+    padding: 5rem 0 10rem 0;
   }
 
   .about-info p:nth-child(1){
