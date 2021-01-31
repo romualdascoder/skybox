@@ -26,7 +26,9 @@ mediaQueryList.addEventListener('change', event => {
   if (event.matches) {
     recaptcha.setAttribute("data-size", "compact");
     
-  } 
+  } else {
+    recaptcha.setAttribute("data-size", "normal");
+  }
 });
 
   
