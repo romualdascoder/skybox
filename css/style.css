@@ -809,7 +809,10 @@ padding-bottom: 1rem;
 
 @media only screen and (max-width: 600px){
  
- 
+  iframe[src*="google.com/recaptcha/"] {
+    transform: scale(0.85);
+    transform-origin: 0 0;
+}
    
 
    
