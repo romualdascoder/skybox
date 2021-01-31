@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const recaptcha = document.querySelector('.g-recaptcha');
   recaptcha.setAttribute("data-theme", "dark");
   
-  const mediaQuery = window.matchMedia('(max-width: 768px)');
+  const mediaQuery = window.matchMedia('@media only screen and (max-width: 780px)');
 if (mediaQuery.matches) {
   recaptcha.setAttribute("data-size", "compact");
 }
