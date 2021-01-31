@@ -22,12 +22,12 @@ const mediaQuery = '(max-width: 600px)';
 const mediaQueryList = window.matchMedia(mediaQuery);
 
 mediaQueryList.addEventListener('change', event => {
-    console.log(window.innerWidth);
+    
   if (event.matches) {
     recaptcha.setAttribute("data-size", "compact");
     
   } 
-})
+});
 
   
 // ----------------------------
