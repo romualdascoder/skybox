@@ -4,14 +4,14 @@ window.addEventListener("load", function () {
 });
 
 // -----------------------------
-
+const recaptcha = document.querySelector('.g-recaptcha');
 document.addEventListener('DOMContentLoaded', (event) => {
-  const recaptcha = document.querySelector('.g-recaptcha');
+  // const recaptcha = document.querySelector('.g-recaptcha');
   recaptcha.setAttribute("data-theme", "dark");
   
 
 });
-const recaptcha = document.querySelector('.g-recaptcha');
+
 const mediaQuery = window.matchMedia('(max-width: 780px)');
 if (mediaQuery.matches) {
   recaptcha.setAttribute("data-size", "compact");
