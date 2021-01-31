@@ -24,8 +24,8 @@ const mediaQueryList = window.matchMedia(mediaQuery);
 mediaQueryList.addEventListener('change', event => {
     
   if (event.matches) {
-    alert("hi")
     
+    document.getElementById("info").style.color = 'blue';
   } 
 });
 
