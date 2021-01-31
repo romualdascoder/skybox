@@ -18,18 +18,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
 // }
 
 
-if (matchMedia) {
-  const mq = window.matchMedia("(max-width: 600px)");
-  mq.addListener(WidthChange);
-  WidthChange(mq);
-  }
+const mediaQuery = '(max-width: 600px)';
+const mediaQueryList = window.matchMedia(mediaQuery);
 
-  function WidthChange(mq) {
-    if (mq.matches) {
-      recaptcha.setAttribute("data-size", "compact");
-    } 
+mediaQueryList.addEventListener('change', event => {
+    console.log(window.innerWidth);
+  if (event.matches) {
+    recaptcha.setAttribute("data-size", "compact");
     
-    }
+  } 
+})
+
+  
 // ----------------------------
 
 const typed = new Typed('.animate', {
