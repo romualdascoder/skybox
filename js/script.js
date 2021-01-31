@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   // recaptcha.style.zIndex = "9";
 });
 
-const mediaQuery = window.matchMedia('(@media only screen and (max-width: 780px))');
+const mediaQuery = window.matchMedia('(min-width: 768px)');
 if (mediaQuery.matches) {
   recaptcha.setAttribute("data-size", "compact");
 }
