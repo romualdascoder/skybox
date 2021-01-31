@@ -9,13 +9,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const recaptcha = document.querySelector('.g-recaptcha');
   recaptcha.setAttribute("data-theme", "dark");
   
-  const mediaQuery = window.matchMedia('(max-width: 780px)');
+
+});
+const recaptcha = document.querySelector('.g-recaptcha');
+const mediaQuery = window.matchMedia('(max-width: 780px)');
 if (mediaQuery.matches) {
   recaptcha.setAttribute("data-size", "compact");
 }
-});
-
-
 
 // ----------------------------
 
