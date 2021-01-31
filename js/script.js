@@ -8,13 +8,14 @@ const recaptcha = document.querySelector('.g-recaptcha');
 document.addEventListener('DOMContentLoaded', (event) => {
   recaptcha.setAttribute("data-theme", "dark");
 });
-window.addEventListener('resize', function(){
-  const mediaQuery = window.matchMedia('(max-width: 600px)');
-  if (mediaQuery.matches) {
-    recaptcha.setAttribute("data-size", "compact");
-  }
-});
 
+const mediaQuery = window.matchMedia('(max-width: 600px)');
+if (mediaQuery.matches) {
+  window.addEventListener('resize', function(){
+    recaptcha.setAttribute("data-size", "compact");
+  });
+  
+}
 
 // ----------------------------
 
