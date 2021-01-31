@@ -7,9 +7,14 @@ window.addEventListener("load", function () {
 document.addEventListener('DOMContentLoaded', (event) => {
   const recaptcha = document.querySelector('.g-recaptcha');
   recaptcha.setAttribute("data-theme", "dark");
-  recaptcha.setAttribute("data-size", "compact");
+  
   // recaptcha.style.zIndex = "9";
 });
+
+const mediaQuery = window.matchMedia('(max-width: 768px)');
+if (mediaQuery.matches) {
+  recaptcha.setAttribute("data-size", "compact");
+}
 
 // ----------------------------
 
