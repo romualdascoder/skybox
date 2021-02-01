@@ -553,7 +553,8 @@ opacity: 0.9;
 /* ----------contacts page------------ */
 
 #contacts{
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  min-height: 100%;
   background-color: var(--main-bg-color);
   display: flex;
   align-items: center;
