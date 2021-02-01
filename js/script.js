@@ -3,20 +3,15 @@ window.addEventListener("load", function () {
   loader.className += " hidden";
 });
 
-// -----------------------------
 const recaptcha = document.querySelector('.g-recaptcha');
 document.addEventListener('DOMContentLoaded', (event) => {
   recaptcha.setAttribute("data-theme", "dark");
 });
 
-
-
-
-
-
-
-  
-// ----------------------------
+VanillaTilt.init(document.querySelectorAll(".js-tilt-animation"), {
+  scale: 1.15,
+  max: 16
+});
 
 const typed = new Typed('.animate', {
   strings: [
@@ -81,7 +76,6 @@ menuLinks.forEach(
   }
 )
 
-// 3d wr header
 let scene, camera, renderer, controls, autoRotate, texture;
 let space = document.querySelector("#space");
 
@@ -98,6 +92,7 @@ function init() {
   space.appendChild(renderer.domElement);
 
   controls = new THREE.OrbitControls(camera, renderer.domElement);
+
   function isTouchEnabled() {
     return ('ontouchstart' in window) ||
       (navigator.maxTouchPoints > 0) ||
@@ -141,11 +136,11 @@ function init() {
     map: texture_lf
   }));
 
-  for (let i = 0; i < 6; i++){
+  for (let i = 0; i < 6; i++) {
     materialArray[i].side = THREE.BackSide;
-  let skyboxGeo = new THREE.BoxGeometry(5000, 5000, 5000);
-  let skybox = new THREE.Mesh(skyboxGeo, materialArray);
-  scene.add(skybox);
+    let skyboxGeo = new THREE.BoxGeometry(5000, 5000, 5000);
+    let skybox = new THREE.Mesh(skyboxGeo, materialArray);
+    scene.add(skybox);
   }
   window.addEventListener('resize', onWindowResize, false);
   animate();
@@ -164,13 +159,18 @@ function animate() {
 }
 init();
 
-
-
-
-
-//  -----------------------
-
-VanillaTilt.init(document.querySelector(".js-tilt"), {
-  perspective: 20,
-  gyroscopeMinAngleX: -185,
-});
+const aboutImg = document.querySelector(".about-img");
+const skillsGallery = document.querySelector(".skills-gallery");
+const projectsGalleryContainer = document.querySelector(".projects-gallery-container");
+let currentPixel = window.pageYOffset;
+const looper = function () {
+  const newPixel = window.pageYOffset;
+  const diff = newPixel - currentPixel
+  const speed = diff * 0.10;
+  aboutImg.style.transform = "skewY(" + speed + "deg)"
+  skillsGallery.style.transform = "skewY(" + speed + "deg)"
+  projectsGalleryContainer.style.transform = "skewY(" + speed + "deg)"
+  currentPixel = newPixel;
+  requestAnimationFrame(looper)
+}
+looper();
