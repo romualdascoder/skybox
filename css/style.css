@@ -1,0 +1,886 @@
+:root {
+  --loader-bg-color: black;
+  --main-bg-color: black;
+  --info-text-color: white;
+  --typed-header-animation-color: rgb(53, 111, 81);
+  --menu-btn-color: rgba(255, 255, 255, 0.8);
+  --i-color: white;
+  --gradient-text-color: rgba(255, 255, 255, 0.6);
+  --gradient-text-hover-color: rgba(0, 0, 0, 0);
+  --gradient-text-mobile-color: white;
+  --material-icons-hover-color: rgba(255, 255, 255);
+  --menu-overlay-bg-color: black;
+  --menu-li-color: #a9a6a9;
+  --main-titles-color: rgba(255, 255, 255, 0.2);
+  --projects-gallery-items-title-color: rgba(255, 255, 255, 0.8);
+  --projects-gallery-items-info-color: rgba(255, 255, 255, 0.5);
+  --touch-btn-color: rgba(255, 255, 255, 0.1);
+  --about-info-text-color: rgba(255, 255, 255, 0.7);
+  --about-info-title-span-color: rgb(53, 111, 81);
+  --cv-btn-border-color: rgba(255, 255, 255, 0.7);
+  --cv-btn-bg-color: black;
+  --cv-btn-bg-hover-color: black;
+  --cv-btn-text-hover-color: white;
+  --contact-form-label-color: #999;
+  --contact-form-input-color: white;
+  --textarea-border-color: #dfdfdf;
+  --contacts-details-color: #999;
+  --hr-color: #999;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+canvas {
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+
+iframe {
+  margin-left: .6rem;
+}
+
+/* ******loader******* */
+.loader {
+  position: fixed;
+  z-index: 9999999999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--loader-bg-color);
+}
+
+.loader img {
+  max-width: 270px;
+}
+
+.loader.hidden {
+  animation: fadeOut 0.5s;
+  transition-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.thumb {
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.logo img {
+  position: absolute;
+  margin: 30px 0 0 10px;
+  max-width: 120px;
+}
+
+/* ********header********* */
+.header-container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--main-bg-color);
+}
+
+#space {
+  z-index: 1000000;
+  height: 100%;
+  width: 100%;
+  background-color: var(--main-bg-color);
+}
+
+#space .touch-btn {
+  left: 50%;
+  top: 91%;
+  font-size: 55px;
+  position: absolute;
+  color: var(--touch-btn-color);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  color: var(--info-text-color);
+  font-family: 'Roboto Mono', monospace;
+  max-width: 550px;
+  width: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#info h1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.9rem;
+}
+
+.animate {
+  color: var(--typed-header-animation-color);
+}
+
+/* ----------menu--------- */
+.menu-btn button {
+  border: none;
+  background: none;
+  position: fixed;
+  padding: 30px 20px 0 0;
+  right: 0%;
+  z-index: 10000;
+}
+
+.menu-btn button:focus {
+  outline: none !important;
+}
+
+.menu-btn .material-icons {
+  font-size: 50px;
+  color: var(--menu-btn-color);
+}
+
+i {
+  outline: none;
+  color: var(--i-color);
+}
+
+ul li a {
+  -webkit-text-stroke: 0.6px rgb(172, 172, 172);
+}
+
+.gradient-text {
+  display: block;
+  font-family: "Cosi Azure";
+  -webkit-text-stroke: 0px;
+  font-weight: bold;
+  color: var(--gradient-text-color);
+  font-size: 80px;
+}
+
+.gradient-text:hover {
+  color: var(--gradient-text-hover-color);
+  -webkit-text-stroke: 0px;
+  text-decoration: none;
+  transform: rotate(5deg);
+  background-clip: text;
+  background: linear-gradient(to right, rgb(62, 62, 62), rgb(255, 255, 255), rgb(74, 74, 74));
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  -webkit-background-clip: text;
+}
+
+.rotate:hover {
+  transform: rotate(-5deg);
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: left
+  }
+
+  50% {
+    background-position: right
+  }
+
+  100% {
+    background-position: left
+  }
+}
+
+.material-icons.md-48 {
+  font-size: 60px;
+}
+
+.material-icons:hover {
+  color: var(--material-icons-hover-color);
+}
+
+.row,
+.col-lg {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.col-lg {
+  z-index: 1000;
+  height: 100vh;
+}
+
+.col-lg.overlay {
+  background: var(--menu-overlay-bg-color);
+  position: fixed;
+  opacity: 0;
+}
+
+.overlay:before {
+  animation: grain 1s steps(10) infinite;
+  background-image: url(/img/grain.jpg);
+  opacity: 0.18;
+  content: "";
+  height: 300%;
+  left: -50%;
+  position: fixed;
+  top: -110%;
+  width: 300%;
+}
+
+@keyframes grain {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  10% {
+    transform: translate(-5%, -10%);
+  }
+
+  20% {
+    transform: translate(-15%, 5%);
+  }
+
+  30% {
+    transform: translate(7%, -25%);
+  }
+
+  40% {
+    transform: translate(-5%, 25%);
+  }
+
+  50% {
+    transform: translate(-15%, 10%);
+  }
+
+  60% {
+    transform: translate(15%, 0%);
+  }
+
+  70% {
+    transform: translate(0%, 15%);
+  }
+
+  80% {
+    transform: translate(3%, 35%);
+  }
+
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
+
+ul {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-align: center;
+  color: var(--menu-li-color);
+}
+
+.row {
+  visibility: hidden;
+}
+
+.showNav {
+  visibility: visible;
+}
+
+/* -------projects------- */
+.projects-title {
+  font-size: 190px;
+  z-index: 999;
+  padding: 0rem 0 7rem 0;
+  margin: 0 auto;
+  color: var(--main-titles-color);
+  font-weight: bold;
+  font-family: "Cosi Azure";
+  transition: .15s;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: var(--main-bg-color);
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  background-image: url('/img/overlaylogo.png');
+  background-size: 450px;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.projects-gallery-container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1300px;
+  transition: 1s;
+  padding-bottom: 8rem;
+}
+
+.projects-gallery-items {
+  perspective: 1000px;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0rem 4rem 4rem 4rem;
+  transition: 1s;
+}
+
+.projects-gallery-animation img {
+  max-width: 450px;
+  width: 100%;
+  height: 230px;
+  opacity: 0.8;
+  border-radius: 1%;
+}
+
+.projects-gallery-items-title {
+  transform: translateZ(60px);
+  font-size: 30px;
+  text-align: center;
+  font-family: "Cosi Azure";
+  color: var(--projects-gallery-items-title-color);
+}
+
+.projects-gallery-items-info {
+  transform: translateZ(50px);
+  text-align: center;
+  font-size: 20px;
+  font-family: "Cosi Azure";
+  color: var(--projects-gallery-items-info-color);
+}
+
+.projects-gallery-animation {
+  transform-style: preserve-3d;
+}
+
+/* ---------about page------------ */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--main-bg-color);
+  overflow: hidden;
+}
+
+.about-info {
+  width: 650px;
+  color: var(--about-info-text-color);
+  font-family: "Cosi Azure";
+  font-size: 24px;
+  line-height: 1.9;
+  transform: translate(20%) !important;
+}
+
+.about-info p:nth-child(1) {
+  font-size: 70px;
+  line-height: 100px;
+}
+
+.about-info p:nth-child(3) {
+  font-size: 50px;
+  line-height: 75px;
+}
+
+.about-info p span {
+  color: var(--about-info-title-span-color);
+}
+
+.cv-btn {
+  width: 150px;
+  height: 50px;
+  border: 1px solid var(--cv-btn-border-color);
+  font-size: 30px;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  transition: 1s;
+  margin-top: 3rem;
+}
+
+.cv-btn a {
+  width: 100%;
+  text-align: center;
+  color: var(--cv-btn-border-color);
+}
+
+.cv-btn::before,
+.cv-btn::after {
+  position: absolute;
+  background: var(--cv-btn-bg-color);
+  z-index: -1;
+  transition: 1s;
+  content: '';
+}
+
+.cv-btn::before {
+  height: 50px;
+  width: 130px;
+}
+
+.cv-btn::after {
+  width: 130px;
+  height: 30px;
+}
+
+.btn-noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.cv-btn:hover::before {
+  width: 0px;
+  background: var(--cv-btn-bg-color);
+}
+
+.cv-btn:hover::after {
+  height: 0px;
+  background: var(--cv-btn-bg-color);
+}
+
+.cv-btn:hover {
+  background: var(--cv-btn-bg-hover-color);
+}
+
+.cv-btn a:hover {
+  text-decoration: none;
+  color: var(--cv-btn-text-hover-color);
+}
+
+.about-img img {
+  max-width: 450px;
+  max-height: 550px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  transform: rotate(-10deg);
+  transition: 1s;
+  padding-right: 5rem;
+  filter: grayscale(100%);
+}
+
+.about-info:hover+.about-img img,
+.about-img img:hover {
+  opacity: 0.4;
+  transform: rotate(0deg);
+}
+
+/* ---------skills----------- */
+#skills {
+  width: 100%;
+  background-color: var(--main-bg-color);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-title {
+  color: var(--main-titles-color);
+  font-size: 180px;
+  margin-bottom: 7rem;
+  font-family: "Cosi Azure";
+  font-weight: bold;
+}
+
+.skills-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0rem 0 12rem 0rem;
+  max-width: 700px;
+  min-height: 300px;
+  transition: .15s;
+}
+
+.skills-gallery img {
+  max-width: 95px;
+  max-height: 95px;
+  width: 100%;
+  height: 100%;
+  margin: 0rem 1.5rem 1.5rem 1.5rem;
+  filter: grayscale(80%);
+  opacity: 0.9;
+}
+
+.skills-gallery img:hover {
+  filter: grayscale(0%);
+  transition: .5s;
+  opacity: 1;
+}
+
+/* ----------contacts page------------ */
+#contacts {
+  min-height: 100%;
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.contacts-title {
+  color: var(--main-titles-color);
+  font-size: 180px;
+  font-weight: bold;
+  margin-bottom: 5rem;
+  font-family: "Cosi Azure";
+}
+
+#contact-form {
+  width: 850px;
+  max-width: 100%;
+  padding: 40px;
+}
+
+.form-titles {
+  padding: 10px;
+}
+
+#contact-form label {
+  display: block;
+  font-size: .9em;
+  color: var(--contact-form-label-color);
+  padding-left: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  resize: vertical;
+  background: transparent;
+  color: var(--contact-form-input-color);
+  font-weight: bolder;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+}
+
+textarea:focus {
+  outline: none;
+  border: none;
+}
+
+.textarea {
+  border-bottom: 1px solid var(--textarea-border-color);
+}
+
+.send {
+  margin: 40px 0 10px 11px !important;
+  text-transform: uppercase;
+  background: transparent;
+  font-size: 16px;
+  letter-spacing: 1px;
+  width: 150px;
+}
+
+.contacts-details {
+  max-width: 1000px;
+  width: 100%;
+  padding: 5rem 2rem 2rem 2rem;
+}
+
+.contacts-details p {
+  text-align: right;
+  color: var(--contacts-details-color);
+  font-size: 20px;
+  font-family: "Cosi Azure";
+  text-decoration: none !important;
+}
+
+.form-btn {
+  width: 155px;
+  height: 49px;
+  font-size: 18px;
+  color: var(--cv-btn-border-color);
+  border-color: var(--cv-btn-border-color);
+}
+
+.hr {
+  background: var(--hr-color);
+  height: 1px;
+  margin: 1rem 0 1rem 0;
+}
+
+.contacts-phone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts-phone img {
+  width: 90px;
+  height: 65px;
+  opacity: 0.6 !important;
+}
+
+@media only screen and (max-width: 1400px) {
+  .touch-btn {
+    visibility: hidden;
+  }
+
+  .projects-container {
+    background-image: none !important;
+  }
+
+  .projects-title {
+    font-size: 160px;
+  }
+
+  .skills-title {
+    font-size: 150px;
+  }
+
+  .contacts-title {
+    font-size: 150px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .about-container {
+    flex-wrap: wrap;
+    padding: 5rem 0 10rem 0;
+  }
+
+  .about-info p:nth-child(1) {
+    font-size: 66px;
+  }
+
+  .about-img img {
+    max-height: 400px;
+    max-width: 350px;
+  }
+
+  .about-info {
+    transform: translate(0%) !important;
+    margin: 0 2rem 0 2rem;
+    font-size: 20px;
+  }
+
+  .about-img img {
+    opacity: 0.2;
+    padding-right: 0rem;
+  }
+
+  .projects-title {
+    font-size: 130px;
+  }
+
+  .skills-title {
+    font-size: 120px;
+  }
+
+  .contacts-title {
+    font-size: 120px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .loader img {
+    max-width: 180px;
+  }
+
+  .menu-btn .material-icons {
+    font-size: 45px;
+  }
+
+  .gradient-text {
+    margin: 25px;
+    font-size: 30px;
+    color: var(--gradient-text-mobile-color);
+    -webkit-text-stroke: 0px;
+  }
+
+  #info h1 {
+    font-size: 1.2rem;
+  }
+
+  .about-container {
+    padding: 5rem 0 6rem 0;
+  }
+
+  .about-info p:nth-child(3) {
+    margin-bottom: 2rem;
+    line-height: 55px;
+  }
+
+  /* --------portfolio--------- */
+  .projects-title {
+    font-size: 100px;
+  }
+
+  .projects-gallery-items-title {
+    font-size: 25px;
+  }
+
+  .projects-gallery-items-info {
+    font-size: 20px;
+  }
+
+  .projects-gallery-items {
+    margin: 5rem .5rem 4rem .5rem;
+  }
+
+  .projects-gallery-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .projects-gallery-animation img {
+    max-width: 400px;
+    height: 220px !important;
+  }
+
+  .logo img {
+    max-width: 90px;
+  }
+
+  .cv-btn {
+    margin: 0 0 1rem 0;
+  }
+
+  .skills-title {
+    font-size: 100px;
+    margin: 0 0 6rem 0;
+  }
+
+  .skills-gallery img {
+    max-width: 70px;
+  }
+
+  .contacts-title {
+    font-size: 100px;
+  }
+
+  .contacts-details p,
+  div {
+    font-size: 15px;
+  }
+
+  .contacts-details p {
+    text-align: center;
+  }
+
+  .contacts-phone {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding-bottom: 1rem;
+  }
+
+  .contacts-year {
+    padding: .5rem;
+    text-decoration: none !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  iframe[src*="google.com/recaptcha/"] {
+    transform: scale(0.85);
+    transform-origin: 0 0;
+  }
+
+  .about-img img {
+    max-height: 350px;
+    max-width: 300px;
+  }
+
+  .projects-title {
+    font-size: 70px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .skills-title {
+    font-size: 60px;
+  }
+
+  .skills-gallery {
+    margin-bottom: 10rem;
+  }
+
+  .contacts-title {
+    font-size: 60px;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  iframe[src*="google.com/recaptcha/"] {
+    transform: scale(0.65);
+    transform-origin: 0 0;
+  }
+
+  .about-info p:nth-child(1) {
+    font-size: 15vw;
+  }
+
+  .projects-gallery-animation img {
+    height: 180px !important;
+  }
+
+  .projects-title {
+    font-size: 15vw;
+  }
+
+  .skills-title {
+    font-size: 15vw;
+  }
+
+  .contacts-title {
+    font-size: 15vw;
+  }
+}
