@@ -1,6 +1,6 @@
 :root {
   --loader-bg-color: black;
-  --main-bg-color: black;
+  --main-bg-color: rgb(0, 0, 0);
   --info-text-color: white;
   --typed-header-animation-color: rgb(53, 111, 81);
   --menu-btn-color: rgba(255, 255, 255, 0.8);
@@ -11,11 +11,11 @@
   --material-icons-hover-color: rgba(255, 255, 255);
   --menu-overlay-bg-color: black;
   --menu-li-color: #a9a6a9;
-  --main-titles-color: rgba(255, 255, 255, 0.2);
+  --main-titles-color: #333;
   --projects-gallery-items-title-color: rgba(255, 255, 255, 0.8);
   --projects-gallery-items-info-color: rgba(255, 255, 255, 0.5);
   --touch-btn-color: rgba(255, 255, 255, 0.1);
-  --about-info-text-color: rgba(255, 255, 255, 0.7);
+  --about-info-text-color: white;
   --about-info-title-span-color: rgb(53, 111, 81);
   --cv-btn-border-color: rgba(255, 255, 255, 0.7);
   --cv-btn-bg-color: black;
@@ -32,6 +32,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  background-color: var(--main-bg-color) !important;
 }
 
 canvas {
@@ -316,76 +317,157 @@ li {
   visibility: visible;
 }
 
-/* -------projects------- */
-.projects-title {
-  font-size: 190px;
-  z-index: 999;
-  padding: 0rem 0 7rem 0;
-  margin: 0 auto;
-  color: var(--main-titles-color);
-  font-weight: bold;
-  font-family: "Cosi Azure";
-  transition: .15s;
+
+
+/* -----------work-expierence------------ */
+
+#work-expierence {
+  width: 100%;
+  color: var(--about-info-text-color);
+  display: flex;
+  justify-content: center;
+  font-family: Sen, sans-serif !important;
 }
 
-.projects-container {
+.work-expierence-container {
+  max-width: 1600px;
+  min-height: 200px;
+  padding: 4rem;
+}
+
+.work-expierence-container-title p:nth-child(1) {
+  font-size: 18px;
+}
+
+.work-expierence-container-title p:nth-child(2) {
+  font-size: 55px;
+  max-width: 780px;
+  font-weight: bold;
+  color: var(--info-text-color);
+}
+
+.work-expierence-container-items {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
-  background-color: var(--main-bg-color);
-  font-family: 'Roboto Mono', monospace;
+}
+
+.work-expierence-container-items>div {
+  max-width: 570px;
+  margin: 2rem 3rem 3rem 0rem;
+}
+
+.work-expierence-container-items>div p:nth-child(1) {
+  margin-bottom: 8px;
+  color: rgb(82, 82, 82);
+  font-size: 117px;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+.work-expierence-container-items>div p:nth-child(2) {
+  font-size: 24px;
+  font-weight: 700;
+  word-spacing: 1px;
   color: white;
-  background-image: url('/img/overlaylogo.png');
-  background-size: 450px;
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+}
+
+.work-expierence-container-items>div p:nth-child(3) {
+  color: #fff;
+  font-size: 17px;
+  word-spacing: 1px;
+  line-height: 1.9;
+}
+
+.work-expierence-container-items>div p:nth-child(2)>span {
+  color: var(--about-info-title-span-color);
+  line-height: 1.9;
+}
+
+
+
+
+
+/* -------projects------- */
+
+#projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
 }
 
 .projects-gallery-container {
-  margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1300px;
+  flex-direction: row;
+  max-width: 1600px;
   transition: 1s;
-  padding-bottom: 8rem;
+  padding: 15rem 0rem 15rem 4rem;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: Sen, sans-serif !important;
+}
+
+.projects-gallery-container div.projects-gallery-items-container:nth-child(2) {
+  padding-right: 4rem;
+}
+
+.projects-gallery-items-container {
+  padding: 0rem 1.5rem 0rem 0rem;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: var(--about-info-text-color);
+}
+
+.projects-second-title {
+  color: #fff;
+  font-size: 55px;
+  margin-bottom: 5rem;
+  font-weight: bold;
+  line-height: 110%;
 }
 
 .projects-gallery-items {
   perspective: 1000px;
   display: flex;
   flex-direction: column;
-  max-width: 500px;
-  margin: 0rem 4rem 4rem 4rem;
+  width: 100%;
+  background-color: #181823;
   transition: 1s;
+  padding-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .projects-gallery-animation img {
-  max-width: 450px;
   width: 100%;
-  height: 230px;
+  padding-bottom: 1rem;
   opacity: 0.8;
-  border-radius: 1%;
+  z-index: 99999999;
 }
 
 .projects-gallery-items-title {
   transform: translateZ(60px);
-  font-size: 30px;
-  text-align: center;
-  font-family: "Cosi Azure";
-  color: var(--projects-gallery-items-title-color);
+  font-size: 24px;
+  margin: 0rem 3rem 1rem 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.projects-gallery-items:hover .projects-gallery-items-title {
+  color: var(--about-info-title-span-color);
+  transition: .5s;
 }
 
 .projects-gallery-items-info {
   transform: translateZ(50px);
-  text-align: center;
-  font-size: 20px;
-  font-family: "Cosi Azure";
-  color: var(--projects-gallery-items-info-color);
+  margin: 0rem 3rem 1rem 3rem;
+  line-height: 150%;
+  font-size: 18px;
+  color: #8491a0;
 }
 
 .projects-gallery-animation {
@@ -406,8 +488,8 @@ li {
 .about-info {
   width: 650px;
   color: var(--about-info-text-color);
-  font-family: "Cosi Azure";
-  font-size: 24px;
+  font-family: Sen, sans-serif !important;
+  font-size: 21px;
   line-height: 1.9;
   transform: translate(20%) !important;
 }
@@ -513,53 +595,70 @@ li {
 }
 
 /* ---------skills----------- */
+
 #skills {
   width: 100%;
-  background-color: var(--main-bg-color);
   overflow: hidden;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+
+}
+
+.skills-container {
+  max-width: 1600px;
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: row;
+  padding: 4rem;
+}
+
+.skill-items-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .skills-title {
-  color: var(--main-titles-color);
-  font-size: 180px;
-  margin-bottom: 7rem;
-  font-family: "Cosi Azure";
+  font-size: 55px;
   font-weight: bold;
+  color: white;
+  margin-right: 5rem;
 }
 
-.skills-gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0rem 0 12rem 0rem;
-  max-width: 700px;
-  min-height: 300px;
-  transition: .15s;
+.skills-container>div img {
+  max-width: 40px;
 }
 
-.skills-gallery img {
-  max-width: 95px;
-  max-height: 95px;
+.skills-container>div>div {
+  margin: 1.2rem 3rem 3rem 0rem;
+  max-width: 600px;
   width: 100%;
-  height: 100%;
-  margin: 0rem 1.5rem 1.5rem 1.5rem;
-  filter: grayscale(80%);
-  opacity: 0.9;
 }
 
-.skills-gallery img:hover {
-  filter: grayscale(0%);
-  transition: .5s;
-  opacity: 1;
+.skills-container>div>div>div {
+  min-height: 180px;
 }
 
+.skills-container>div>div p:nth-child(2) {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  line-height: 120%;
+  padding-top: 1rem;
+}
+
+.skills-container>div>div p:nth-child(3) {
+  font-size: 16px;
+  color: #8491a0;
+  line-height: 150%;
+}
 /* ----------contacts page------------ */
 #contacts {
   min-height: 100%;
+  width: 100%;
   background-color: var(--main-bg-color);
   display: flex;
   align-items: center;
@@ -567,22 +666,38 @@ li {
   overflow: hidden;
 }
 
+.contacts-container {
+  display: flex;
+  max-width: 1600px;
+  width: 100%;
+  padding: 4rem;
+}
+
+.contacts-title-container {
+  margin-right: 5rem;
+  max-width: 350px;
+  width: 100%;
+}
+
 .contacts-title {
-  color: var(--main-titles-color);
-  font-size: 180px;
+  color: white;
+  font-size: 55px;
   font-weight: bold;
-  margin-bottom: 5rem;
-  font-family: "Cosi Azure";
+}
+
+.contacts-title-info {
+  font-size: 16px;
+  color: #8491a0;
+  line-height: 150%;
 }
 
 #contact-form {
-  width: 850px;
-  max-width: 100%;
-  padding: 40px;
+  max-width: 800px;
+  width: 100%;
 }
 
 .form-titles {
-  padding: 10px;
+  padding: 10px 10px 10px 0px;
 }
 
 #contact-form label {
@@ -618,7 +733,7 @@ textarea:focus {
 }
 
 .send {
-  margin: 40px 0 10px 11px !important;
+  margin: 40px 0 10px 0px !important;
   text-transform: uppercase;
   background: transparent;
   font-size: 16px;
@@ -627,14 +742,14 @@ textarea:focus {
 }
 
 .contacts-details {
-  max-width: 1000px;
+  max-width: 1550px;
   width: 100%;
   padding: 5rem 2rem 2rem 2rem;
 }
 
 .contacts-details p {
   text-align: right;
-  color: var(--contacts-details-color);
+  color: white;
   font-size: 20px;
   font-family: "Cosi Azure";
   text-decoration: none !important;
@@ -663,28 +778,17 @@ textarea:focus {
 .contacts-phone img {
   width: 90px;
   height: 65px;
-  opacity: 0.6 !important;
 }
 
 @media only screen and (max-width: 1400px) {
   .touch-btn {
     visibility: hidden;
   }
+}
 
-  .projects-container {
-    background-image: none !important;
-  }
-
-  .projects-title {
-    font-size: 160px;
-  }
-
-  .skills-title {
-    font-size: 150px;
-  }
-
-  .contacts-title {
-    font-size: 150px;
+@media only screen and (max-width: 1150px) {
+  .skills-container {
+    flex-wrap: wrap;
   }
 }
 
@@ -714,16 +818,80 @@ textarea:focus {
     padding-right: 0rem;
   }
 
-  .projects-title {
-    font-size: 130px;
+  .work-expierence-container {
+    padding: 0rem 0.6rem 0rem 2rem;
+  }
+
+  .work-expierence-container-title p:nth-child(1) {
+    font-size: 15px;
+  }
+
+  .work-expierence-container-title p:nth-child(2) {
+    font-size: 40px;
+  }
+
+  .work-expierence-container-items>div {
+    margin: 2rem 1.5rem 2rem 0rem;
+  }
+
+  #projects {
+
+    justify-content: flex-start;
+  }
+
+  .projects-gallery-container {
+    flex-direction: column;
+  }
+
+  .projects-second-title {
+    font-size: 35px;
+  }
+
+  .projects-gallery-container {
+    padding: 0rem;
+    margin: 3rem 1.5rem 3rem 1.5rem;
+  }
+
+  .projects-gallery-container div.projects-gallery-items-container:nth-child(2) {
+    padding-right: 0rem;
+  }
+
+  .projects-gallery-items-container {
+    padding: 0rem;
+  }
+
+  .skills-container {
+    padding: 1.5rem;
+  }
+
+  .skill-items-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills-container>div>div {
+    margin: 0rem;
   }
 
   .skills-title {
-    font-size: 120px;
+    padding-bottom: 4rem;
   }
 
-  .contacts-title {
-    font-size: 120px;
+  .skills-container>div>div p:nth-child(2) {
+    font-size: 24px;
+  }
+
+  .skills-container>div>div p:nth-child(3) {
+    font-size: 16px;
+  }
+
+  .skills-container>div>div>div {
+    min-height: 100px;
+    padding-bottom: 3.5rem;
+  }
+
+  .contacts-container {
+    padding: 1.5rem;
   }
 }
 
@@ -756,32 +924,21 @@ textarea:focus {
     line-height: 55px;
   }
 
-  /* --------portfolio--------- */
-  .projects-title {
-    font-size: 100px;
-  }
-
-  .projects-gallery-items-title {
-    font-size: 25px;
-  }
-
-  .projects-gallery-items-info {
-    font-size: 20px;
-  }
-
-  .projects-gallery-items {
-    margin: 5rem .5rem 4rem .5rem;
-  }
-
-  .projects-gallery-items {
-    display: flex;
-    flex-direction: column;
+  .work-expierence-container-items {
     flex-wrap: wrap;
   }
 
-  .projects-gallery-animation img {
-    max-width: 400px;
-    height: 220px !important;
+  .skills-title {
+    font-size: 35px;
+  }
+
+  .contacts-container {
+    flex-direction: column;
+  }
+
+  .contacts-title {
+    font-size: 35px;
+    padding-right: 0rem;
   }
 
   .logo img {
@@ -790,19 +947,6 @@ textarea:focus {
 
   .cv-btn {
     margin: 0 0 1rem 0;
-  }
-
-  .skills-title {
-    font-size: 100px;
-    margin: 0 0 6rem 0;
-  }
-
-  .skills-gallery img {
-    max-width: 70px;
-  }
-
-  .contacts-title {
-    font-size: 100px;
   }
 
   .contacts-details p,
@@ -837,25 +981,6 @@ textarea:focus {
     max-height: 350px;
     max-width: 300px;
   }
-
-  .projects-title {
-    font-size: 70px;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
-  .skills-title {
-    font-size: 60px;
-  }
-
-  .skills-gallery {
-    margin-bottom: 10rem;
-  }
-
-  .contacts-title {
-    font-size: 60px;
-    margin-bottom: 2.5rem;
-  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -865,22 +990,6 @@ textarea:focus {
   }
 
   .about-info p:nth-child(1) {
-    font-size: 15vw;
-  }
-
-  .projects-gallery-animation img {
-    height: 180px !important;
-  }
-
-  .projects-title {
-    font-size: 15vw;
-  }
-
-  .skills-title {
-    font-size: 15vw;
-  }
-
-  .contacts-title {
     font-size: 15vw;
   }
 }

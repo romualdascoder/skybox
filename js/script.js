@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 VanillaTilt.init(document.querySelectorAll(".js-tilt-animation"), {
-  scale: 1.15,
-  max: 16
+  scale: 1,
+  max: 10
 });
 
 const typed = new Typed('.animate', {
@@ -160,7 +160,6 @@ function animate() {
 init();
 
 const aboutImg = document.querySelector(".about-img");
-const skillsGallery = document.querySelector(".skills-gallery");
 const projectsGalleryContainer = document.querySelector(".projects-gallery-container");
 let currentPixel = window.pageYOffset;
 const looper = function () {
@@ -168,7 +167,6 @@ const looper = function () {
   const diff = newPixel - currentPixel
   const speed = diff * 0.10;
   aboutImg.style.transform = "skewY(" + speed + "deg)"
-  skillsGallery.style.transform = "skewY(" + speed + "deg)"
   projectsGalleryContainer.style.transform = "skewY(" + speed + "deg)"
   currentPixel = newPixel;
   requestAnimationFrame(looper)

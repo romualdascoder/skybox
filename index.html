@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Portfolio</title>
   <link rel="icon" href="img/icon.png" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="css/style.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" type="text/css" href="css/aos.css" />
   <link rel="stylesheet" type="text/css" href="css/magic-mouse.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"
@@ -15,6 +16,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <div class="loader">
     <img src="img/logo.png" alt="Loading..." />
@@ -50,7 +52,7 @@
   </header>
   <section id="about">
     <div class="about-container">
-      <div class="about-info magic-hover" data-aos="fade-up">
+      <div class="about-info magic-hover" data-aos="zoom-in">
         <p>const <span>info</span> = </p>
         <p>
           Kai konsolėje parašiau savo pirmąjį „Hello World“, supratau, kad patekau į visiškai kitą žinių pasaulį.
@@ -59,7 +61,7 @@
         </p>
         <p>;</p>
         <div class="cv-btn">
-          <a href="img/cv.pdf" class="btn-noselect" target="_blank">
+          <a href="img/cvv.pdf" class="btn-noselect" target="_blank">
             <span>CV</span>
           </a>
         </div>
@@ -67,113 +69,153 @@
       <div class="about-img magic-hover js-tilt" data-tilt><img src="img/background.jpg" alt="background"></div>
     </div>
   </section>
+  <section id="work-expierence">
+    <div class="work-expierence-container">
+      <div class="work-expierence-container-title">
+        <p>DARBO PATIRTIS</p>
+        <p>Įmonės kuriose dirbau pastaruoju metu</p>
+      </div>
+      <div class="work-expierence-container-items">
+        <div data-aos="fade-right">
+          <p>01</p>
+          <p><span>Buvertas</span>, IT/WEB specialistas</p>
+          <p>Svetainių kūrimas ir administravimas. Reklamos kūrimas naudojant Adobe programų paketą. Kompiuterinės
+            įrangos priežiūra, konsultavimas.</p>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="300">
+          <p>02</p>
+          <p><span>LigoWave</span>, QA specialistas</p>
+          <p>Programinis Wi-Fi įrangos testavimas. Testavimo skriptų kūrimas automatizuotiems testams. Kreipinių ir
+            iškilusių problemų identifikavimas ir sprendimas. Kodo rašymas Python programavimo kalba.</p>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="600">
+          <p>03</p>
+          <p><span>Top</span>, IT/WEB specialistas</p>
+          <p>Interneto svetainių ir socialinių tinklų administravimas. Reklamos kūrimas. IT pagalbos teikimas nuotoliniu
+            būdu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
   <section id="projects">
-    <div class="projects-container">
-      <p class="projects-title" data-aos="fade-up">Projektai</p>
-      <div class="projects-gallery-container magic-hover ">
-        <div class="projects-gallery-items" data-aos="fade-up">
-          <div class="projects-gallery-animation js-tilt-animation">
-            <img class="" src="img/project1.gif" alt="project">
+    <div class="projects-gallery-container magic-hover ">
+      <div class="projects-gallery-items-container">
+        <p class="projects-title">Mano projektai</p>
+        <p class="projects-second-title">Keletas atliktų darbų naudojant įvairias technologijas</p>
+        <div class="projects-gallery-items" data-aos="zoom-in">
+          <div class="projects-gallery-animation">
+            <img class="js-tilt-animation" src="img/project1.gif" alt="project">
             <p class="projects-gallery-items-title">Apartment tema</p>
-            <div class="projects-gallery-items-info">
-              <p>Technologijos: JS, HTML, CSS</p>
-            </div>
+            <p class="projects-gallery-items-info">Technologijos: JavaScript, HTML, CSS</p>
           </div>
         </div>
-        <div class="projects-gallery-items" data-aos="fade-up">
-          <div class="projects-gallery-animation js-tilt-animation">
-            <img class="" src="img/project2.gif" alt="">
+        <div class="projects-gallery-items" data-aos="zoom-in">
+          <div class="projects-gallery-animation">
+            <img class="js-tilt-animation" src="img/project2.gif" alt="">
             <p class="projects-gallery-items-title">Snowboards e-shop tema</p>
-            <div class="projects-gallery-items-info">
-              <p>Technologijos: JS, HTML, CSS</p>
-            </div>
+            <p class="projects-gallery-items-info">Technologijos: JavaScript, HTML, CSS</p>
           </div>
         </div>
-        <div class="projects-gallery-items" data-aos="fade-up">
-          <div class="projects-gallery-animation js-tilt-animation">
-            <img class="" src="img/project3.gif" alt="project">
+      </div>
+      <div class="projects-gallery-items-container">
+        <div class="projects-gallery-items" data-aos="zoom-in">
+          <div class="projects-gallery-animation">
+            <img class="js-tilt-animation" src="img/project3.gif" alt="project">
             <p class="projects-gallery-items-title">RPG žaidimas</p>
-            <div class="projects-gallery-items-info">
-              <p>Technologijos: JS, HTML, CSS</p>
-            </div>
+            <p class="projects-gallery-items-info">Technologijos: JavaScript, HTML, CSS</p>
           </div>
         </div>
-        <div class="projects-gallery-items" data-aos="fade-up">
-          <div class="projects-gallery-animation js-tilt-animation">
-            <img class="" src="img/project4.gif" alt="project">
+        <div class="projects-gallery-items" data-aos="zoom-in">
+          <div class="projects-gallery-animation">
+            <img class="js-tilt-animation" src="img/project4.gif" alt="project">
             <p class="projects-gallery-items-title">Registry tema</p>
-            <div class="projects-gallery-items-info">
-              <p>Technologijos: JS, HTML, CSS</p>
-            </div>
+            <p class="projects-gallery-items-info">Technologijos: JavaScript, HTML, CSS</p>
           </div>
         </div>
-        <div class="projects-gallery-items" data-aos="fade-up">
-          <div class="projects-gallery-animation js-tilt-animation">
-            <img class="" src="img/project5.gif" alt="project">
+        <div class="projects-gallery-items" data-aos="zoom-in">
+          <div class="projects-gallery-animation">
+            <img class="js-tilt-animation" src="img/project5.gif" alt="project">
             <p class="projects-gallery-items-title">Orų prognozės aplikacija</p>
-            <div class="projects-gallery-items-info">
-            </div>
+            <p class="projects-gallery-items-info">Technologijos: Angular</p>
           </div>
         </div>
       </div>
     </div>
   </section>
   <section id="skills">
-    <p class="skills-title" data-aos="fade-up">Technologijos</p>
-    <div class="skills-gallery" data-aos="fade-up">
-      <img class="js-tilt-animation" src="img/slide7.png" alt="javascript">
-      <img class="js-tilt-animation" src="img/slide5.png" alt="html">
-      <img class="js-tilt-animation" src="img/slide1.png" alt="css">
-      <img class="js-tilt-animation" src="img/slide12.png" alt="node">
-      <img class="js-tilt-animation" src="img/slide13.png" alt="webpack">
-      <img class="js-tilt-animation" src="img/slide14.png" alt="gulp">
-      <img class="js-tilt-animation" src="img/slide11.png" alt="npm">
-      <img class="js-tilt-animation" src="img/slide2.png" alt="git">
-      <img class="js-tilt-animation" src="img/slide8.png" alt="wordpress">
-      <img class="js-tilt-animation" src="img/slide3.png" alt="virtualbox">
-      <img class="js-tilt-animation" src="img/slide9.png" alt="wmvare">
-      <img class="js-tilt-animation" src="img/slide15.png" alt="finalcut">
-      <img class="js-tilt-animation" src="img/slide4.png" alt="iliustrator">
-      <img class="js-tilt-animation" src="img/slide6.png" alt="photoshop">
-      <img class="js-tilt-animation" src="img/slide10.png" alt="premiere">
+    <div class="skills-container">
+      <div>
+        <p class="skills-title">Technologijos</p>
+      </div>
+      <div class="skill-items-container">
+        <div>
+          <div data-aos="zoom-in">
+            <img src="img/javascript.svg" alt="">
+            <p>Web technologijos</p>
+            <p>JavaScript, HTML, CSS, Wordpress, Node.js, Visual Studio, Git, Gulp.js, Npm, JSON</p>
+          </div>
+          <div data-aos="zoom-in">
+            <img src="img/virtual.svg" alt="">
+            <p>Virtualios mašinos / Operacinės sistemos</p>
+            <p>Wmvare, Virtualbox, Linux, Mac OS</p>
+          </div>
+        </div>
+        <div>
+          <div data-aos="zoom-in">
+            <img src="img/photoshop.svg" alt="">
+            <p>Grafinės programos</p>
+            <p>Photoshop, Lightroom, Iliustrator</p>
+          </div>
+          <div data-aos="zoom-in">
+            <img src="img/premiere.svg" alt="">
+            <p>Vaizdo montavimo programos</p>
+            <p>Final Cut Pro, Premiere Pro CC</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <section id="contacts">
-    <p class="magic-hover contacts-title" data-aos="fade-up">Susisiekite</p>
-    <form name="contact-form" id="contact-form" class="magic-hover" method="POST" action="/success.html"
-      data-aos="fade-up" data-netlify="true" netlify-honeypot="bot-field">
-      <div class="form-titles">
-        <label for="contact-name">Vardas:</label>
-        <div class="textarea">
-          <input type="text" name="name" id="name" value="" required>
-        </div>
+    <div class="contacts-container">
+      <div class="contacts-title-container">
+        <p class="magic-hover contacts-title">Susisiekite</p>
+        <p class="contacts-title-info">Telefonu +370 68340589 arba rašykite žinutę pateiktoje formoje. Gražios dienos.
+        </p>
       </div>
-      <div class="form-titles">
-        <label for="contact-email">El. paštas:</label>
-        <div class="textarea">
-          <input type="email" name="email" id="email" value="" required>
+      <form name="contact-form" id="contact-form" class="magic-hover" method="POST" action="/success.html"
+        data-netlify="true" netlify-honeypot="bot-field">
+        <div class="form-titles">
+          <label for="contact-name">Vardas</label>
+          <div class="textarea">
+            <input type="text" name="name" id="name" value="" required>
+          </div>
         </div>
-      </div>
-      <div class="form-titles">
-        <label for="contact-project">Žinutė:</label>
-        <div class="textarea">
-          <textarea type="email" name="message" id="message" rows="3" value="" required>
+        <div class="form-titles">
+          <label for="contact-email">El. paštas</label>
+          <div class="textarea">
+            <input type="email" name="email" id="email" value="" required>
+          </div>
+        </div>
+        <div class="form-titles">
+          <label for="contact-project">Žinutė</label>
+          <div class="textarea">
+            <textarea type="email" name="message" id="message" rows="3" value="" required>
                     </textarea>
+          </div>
         </div>
-      </div>
-      <div class="field">
-        <div data-netlify-recaptcha="true"></div>
-      </div>
-      <button type="submit" name="submit" id="submit" class="send cv-btn form-btn">Siųsti</button>
-    </form>
+        <div class="field">
+          <div data-netlify-recaptcha="true"></div>
+        </div>
+        <button type="submit" name="submit" id="submit" class="send cv-btn form-btn">Siųsti</button>
+      </form>
+    </div>
     <div class="contacts-details">
-      <p>Skambinkite</p>
       <div class="hr"></div>
       <div class="contacts-phone">
         <img class="magic-hover" src="img/logo.png" alt="logo">
-        <p class="contacts-year">&copy 2021</p>
+        <p class="contacts-year">Made in Lithuania</p>
         <div>
-          <p>+370 68340589</p>
+          <p>&copy 2021</p>
         </div>
       </div>
     </div>
@@ -185,6 +227,7 @@
   <script src="js/typed.js"></script>
   <script src="js/mouse.js"></script>
   <script src="js/tilt.min.js"></script>
-  <script src="js/script.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
