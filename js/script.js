@@ -8,9 +8,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
   recaptcha.setAttribute("data-theme", "dark");
 });
 
-function recaptcha_callback() {
-  document.querySelector("#submit").removeAttribute('disabled');
-   }; 
+// function recaptcha_callback() {
+//   document.querySelector("#submit").removeAttribute('disabled');
+//    }; 
+
+   function terms_changed(){
+    //If the checkbox has been checked
+    const checkbox = document.querySelector(".recaptcha-checkbox");
+   
+    if(checkbox.checked){
+        //Set the disabled property to FALSE and enable the button.
+        document.getElementById("submit").disabled = false;
+    } else{
+        //Otherwise, disable the submit button.
+        document.getElementById("submit").disabled = true;
+    }
+}  
 
 VanillaTilt.init(document.querySelectorAll(".js-tilt-animation"), {
   scale: 1,
