@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 
-document.addEventListener('DOMContentLoaded', (event) => {
-  if(recaptcha.checked){
+document.addEventListener('click', (event) => {
+  if(recaptcha.clicked){
     //Set the disabled property to FALSE and enable the button.
     document.getElementById("submit").disabled = false;
 } else{
