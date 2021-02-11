@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
    function terms_changed(){
     //If the checkbox has been checked
-    const checkbox = document.querySelector(".recaptcha-checkbox");
+    const checkbox = document.querySelector("iframe");
    
     if(checkbox.checked){
         //Set the disabled property to FALSE and enable the button.
