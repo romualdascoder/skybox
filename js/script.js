@@ -8,6 +8,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
   recaptcha.setAttribute("data-theme", "dark");
 });
 
+function recaptchaCallback() {
+  document.querySelector("#submit").removeAttribute('disabled');
+   }; 
+
 VanillaTilt.init(document.querySelectorAll(".js-tilt-animation"), {
   scale: 1,
   max: 10
