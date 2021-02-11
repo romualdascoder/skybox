@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   recaptcha.setAttribute("data-theme", "dark");
 });
 
-function recaptchaCallback() {
+function recaptcha_callback() {
   document.querySelector("#submit").removeAttribute('disabled');
    }; 
 
