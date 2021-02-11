@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         //Otherwise, disable the submit button.
         document.getElementById("submit").disabled = true;
     }
-}  
+} 
+terms_changed(); 
 
 VanillaTilt.init(document.querySelectorAll(".js-tilt-animation"), {
   scale: 1,
