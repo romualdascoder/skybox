@@ -9,16 +9,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 
-document.addEventListener('click', (event) => {
-  if(recaptcha.clicked){
-    //Set the disabled property to FALSE and enable the button.
-    document.getElementById("submit").disabled = false;
-} else{
-    //Otherwise, disable the submit button.
-    document.getElementById("submit").disabled = true;
-}
+// document.addEventListener('click', (event) => {
+//   if(recaptcha.clicked){
+    
+//     document.getElementById("submit").disabled = false;
+// } else{
+    
+//     document.getElementById("submit").disabled = true;
+// }
 
-});
+// });
+
+if(document.getElementById('submit').clicked == true)
+{
+  document.getElementById("submit").disabled = false;
+}
 
 
 VanillaTilt.init(document.querySelectorAll(".js-tilt-animation"), {
