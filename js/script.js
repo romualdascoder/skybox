@@ -8,24 +8,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
   recaptcha.setAttribute("data-theme", "dark");
 });
 
-
-// document.addEventListener('click', (event) => {
-//   if(recaptcha.clicked){
-    
-//     document.getElementById("submit").disabled = false;
-// } else{
-    
-//     document.getElementById("submit").disabled = true;
-// }
-
-// });
-
-if(document.getElementById('submit').clicked == true)
-{
-  document.getElementById("submit").disabled = false;
-}
-
-
 VanillaTilt.init(document.querySelectorAll(".js-tilt-animation"), {
   scale: 1,
   max: 10
