@@ -3,10 +3,10 @@ window.addEventListener("load", function () {
   loader.className += " hidden";
 });
 
-const recaptcha = document.querySelector('.g-recaptcha');
-document.addEventListener('DOMContentLoaded', (event) => {
-  recaptcha.setAttribute("data-theme", "dark");
-});
+// const recaptcha = document.querySelector('.g-recaptcha');
+// document.addEventListener('DOMContentLoaded', (event) => {
+//   recaptcha.setAttribute("data-theme", "dark");
+// });
 
 VanillaTilt.init(document.querySelectorAll(".js-tilt-animation"), {
   scale: 1,
@@ -172,3 +172,9 @@ const looper = function () {
   requestAnimationFrame(looper)
 }
 looper();
+
+
+window.addEventListener('load', function () {
+  ga('create', 'G-E5G00Q4WQ5', 'auto')
+  ga('send', 'pageview')
+})
