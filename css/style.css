@@ -353,7 +353,8 @@ li {
 }
 
 .work-expierence-container-items>div {
-  max-width: 570px;
+  max-width: 400px;
+  width: 100%;
   margin: 2rem 3rem 3rem 0rem;
 }
 
@@ -415,6 +416,7 @@ li {
 .projects-gallery-items-container {
   padding: 0rem 1.5rem 0rem 0rem;
   max-width: 800px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
