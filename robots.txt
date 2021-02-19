@@ -1,3 +1,1 @@
-User-Agent: *
-Disallow:
 Sitemap: https://cloudcode.lt/sitemap.xml
